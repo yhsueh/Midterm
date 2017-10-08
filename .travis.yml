@@ -55,9 +55,9 @@ install:
   - echo "OpenCV installed."
   
   # We need to return to the repo "root" folder, so we can then 'cd' into the C++ project folder.
-- cd ../../ 
+#- cd ../../ 
 script:
-  - cd cpp_boilerplate
+  - cd ${TRAVIS_BUILD_DIR}
   - export CXX=$COMPILER;
   - mkdir build
   - cd build
