@@ -57,7 +57,7 @@ install:
   # We need to return to the repo "root" folder, so we can then 'cd' into the C++ project folder.
 #- cd ../../ 
 script:
-  - cd ${TRAVIS_BUILD_DIR}
+  #- cd ${TRAVIS_BUILD_DIR}
   - export CXX=$COMPILER;
   - mkdir build
   - cd build
