@@ -19,8 +19,10 @@ if (COVERAGE)
 else()
     set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -g")
 endif()
-
+find_package(OpenCV REQUIRED)
 include(CMakeToolsHelpers OPTIONAL)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 14)
 
