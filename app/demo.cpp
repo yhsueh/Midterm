@@ -1,5 +1,4 @@
 #include <opencv2/core/core.hpp>
-#include <opencv2/viz/vizcore.hpp>
 #include <iostream>
 #include "sample1.hpp"
   
