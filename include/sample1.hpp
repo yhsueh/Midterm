@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
-int continuousTest(int);
+#include <memory>
+#include <opencv2/core/core.hpp>
+int continuousTest(std::shared_ptr<cv::Mat>);
 
 
 
