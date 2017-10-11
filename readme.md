@@ -4,6 +4,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/yhsueh/Midterm/badge.svg?branch=master)](https://coveralls.io/github/yhsueh/Midterm?branch=master)
 ---
 
+## Sprint Planning Google Spreadsheet
+https://docs.google.com/spreadsheets/d/1WPp6IvV1L7NysiTNfeEvrVmxwbvYig_B03FKdd1seJg/edit?usp=sharing
+
 ## Overview
 
 Simple starter C++ project with:
