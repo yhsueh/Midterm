@@ -1,24 +1,19 @@
 #include <iostream>
-#include <memory>
+#include <string>
 #include <vector>
+#include <memory>
 #include <boost/filesystem.hpp>
 #include <opencv2/core/core.hpp>
-#include "sample1.hpp"  
+#include "Classifier.hpp"  
+
+void init(){
+	std::string dogPath = ("../expSamples/dog/");	
+	Classifier classifierDog;
+	classifierDog.imgInit(dogPath);
+}
 
 int main()
 {
-    std::vector<cv::Mat> imageVec;
-    boost::filesystem::path p("../expSamples/dog/");
-    boost::filesystem::directory_iterator end_itr;
-    
-    for(boost::filesystem::directory_iterator itr(p); itr != end_itr; itr++){
-    	cv::Mat img;
-    	img = cv::imread(itr->path().string());
-    	imageVec.push_back(img);
-
-
-    }
-    
-    std::cout << "Vec size" << imageVec.size() << std::endl;
+    init();
     return 0;
 }

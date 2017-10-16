@@ -1,4 +1,4 @@
-add_executable(shell-app demo.cpp sample1.cpp)
+add_executable(shell-app demo.cpp Classifier.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
 )
