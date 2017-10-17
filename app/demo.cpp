@@ -6,9 +6,18 @@
 
 void init(){
 	std::string dogPath = ("../expSamples/dog/");	
-	std::string loadDogPath = ("../classifier.yml");
-	Classifier classifierDog(1,loadDogPath);
+	std::string loadDogPath = ("../Classifier_Dog.yml");
+	std::string streetImgPath = ("../expSamples/StreetView/street9.jpeg");
+	Classifier classifierDog(true,true,loadDogPath);
+	classifierDog.imgInit(dogPath);	
+	classifierDog.predictImg(streetImgPath);	
+
+/*
+	Classifier classifierDog;
+	classifierDog.setSavePath("../");
+	classifierDog.setSaveName("Dog");
 	classifierDog.imgInit(dogPath);
+*/	
 	
 }
 
