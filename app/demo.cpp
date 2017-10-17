@@ -2,14 +2,14 @@
 #include <string>
 #include <vector>
 #include <memory>
-#include <boost/filesystem.hpp>
-#include <opencv2/core/core.hpp>
 #include "Classifier.hpp"  
 
 void init(){
 	std::string dogPath = ("../expSamples/dog/");	
-	Classifier classifierDog;
+	std::string loadDogPath = ("../classifier.yml");
+	Classifier classifierDog(1,loadDogPath);
 	classifierDog.imgInit(dogPath);
+	
 }
 
 int main()

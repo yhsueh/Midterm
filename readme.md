@@ -1,5 +1,5 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/yhsueh/Midterm.svg?branch=master)](https://travis-ci.org/yhsueh/Midterm.svg?branch=master)
+[![Build Status](https://travis-ci.org/yhsueh/Midterm.svg?branch=master)](https://travis-ci.org/yhsueh/Midterm)
 
 [![Coverage Status](https://coveralls.io/repos/github/yhsueh/Midterm/badge.svg?branch=master)](https://coveralls.io/github/yhsueh/Midterm?branch=master)
 ---

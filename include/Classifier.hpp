@@ -1,17 +1,25 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include "opencv2/core/core.hpp"
-#include "opencv2/objdetect/objdetect.hpp"
 #pragma once
+#include <iostream>
+#include <string>
+#include <vector>
+#include <boost/filesystem.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/opencv.hpp> 
+#include <opencv2/objdetect/objdetect.hpp>
+
 class Classifier{
-	cv::CascadeClassifier classifier;
+	cv::Ptr<cv::ml::SVM> svm;
 	std::vector<cv::Mat> images;
+	std::string loadPath;
+	std::string savePath; //Saving classifier
+    unsigned pos_num;
+	bool loadFlag;
 
 	public:
 		Classifier();
-		void imgInit(std::string&);
+		Classifier(int flag, std::string& path): loadFlag(flag),loadPath(path){};
 		void imgDenoise();
-		void train();
-		cv::CascadeClassifier getClassifier(){return classifier;}
+		void extractHOGandTrain();
+		void imgInit(std::string&);		
+		void setSavePath(std::string& Name){savePath = Name;}
 };
