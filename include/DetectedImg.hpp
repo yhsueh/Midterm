@@ -1,9 +1,6 @@
 /** @file DetectedImg.hpp
- * @brief Classifier class generates binary class classifier from image samples.
- * images to train linear SVM. 
+ * @brief The class that stores the detected images and its results from SVM testing.
  * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
- *
- * A binary classifier class is created to train to detect dogs/blind humans in a random images.
  */
 #pragma once
 #include <opencv2/core/core.hpp>
