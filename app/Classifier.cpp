@@ -95,7 +95,7 @@ void Classifier::extractHOGandTrain() {
     svm->setKernel(cv::ml::SVM::LINEAR);
     svm = cv::ml::SVM::load(loadPath);
     std::cout << "Load process completes" << std::endl;
-
+    }
     // Test Samples
     if (testSampleFlag) {
       std::vector<float> testingDecs;
@@ -122,7 +122,6 @@ void Classifier::extractHOGandTrain() {
       svm->predict(testingDecs, predictions);
       std::cout << "Prediction Sample Test (1 dog: -1 not dog): "
           << predictions.at<float>(0) << std::endl;
-    }
     // GOOGLETEST LENGTH
   }
 }

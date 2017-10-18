@@ -16,7 +16,7 @@
 DetectedImg::DetectedImg() {
 }
 
-void DetectedImg::loadImgs(cv::Mat& img) { 
+void DetectedImg::loadImgs(cv::Mat& img) {
 /**
 * @brief Store images from detected image vector
 * @param cv::Mat
