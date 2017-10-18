@@ -15,19 +15,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-Classifier::Classifier() {
-/**
-* @brief Denoise samples
-* @param vector consists of images
-* @return none
-*/
-  loadPath = "";
-  savePath = "../classifier.yml";
-  saveName = "NoName";
-  pos_num = 0;
-  loadFlag = false;
-  testSampleFlag = false;
-}
 
 void Classifier::imgDenoise() {
 /**
