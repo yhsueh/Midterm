@@ -31,10 +31,10 @@ install:
   - sudo apt-get install -y cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
   - sudo apt-get install -y python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
 
-# Download v3.0.0 .zip file and extract.
-  - curl -sL https://github.com/Itseez/opencv/archive/3.0.0-beta.zip > opencv.zip
+# Download v3.2.0 .zip file and extract.
+  - curl -sL https://github.com/Itseez/opencv/archive/3.2.0.zip > opencv.zip
   - unzip opencv.zip
-  - cd opencv-3.0.0-beta
+  - cd opencv-3.2.0-beta
   
   # Create a new 'build' folder.
   - mkdir build
