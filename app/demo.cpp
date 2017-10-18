@@ -1,21 +1,20 @@
 /** @file demo.cpp
-* @brief This is the demo cpp that calls a classifier class and sets up the path variables
-* necessary for class constructor.
-* @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.*
-*/
+ * @brief This is the demo cpp that calls a classifier class and sets up the path variables
+ * necessary for class constructor.
+ * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.*
+ */
 #include <iostream>
 #include <string>
 #include <vector>
 #include <memory>
 #include "Classifier.hpp"
 
-void init() {
+void dogClassifierInit(DetectedImg& imgs) {
   std::string dogPath = ("../expSamples/dog/");
   std::string loadDogPath = ("../Classifier_Dog.yml");
-  std::string streetImgPath = ("../expSamples/StreetView/street9.jpeg");
   Classifier classifierDog(loadDogPath, true, true);
   classifierDog.imgInit(dogPath);
-  classifierDog.predictImg(streetImgPath);
+  classifierDog.predictImg(imgs);
 
   /*
    Classifier classifierDog;
@@ -26,6 +25,20 @@ void init() {
 }
 
 int main() {
-  init();
+  cv::Mat street1 = cv::imread("../expSamples/StreetView/street3.jpeg");
+  cv::Mat street2 = cv::imread("../expSamples/StreetView/street8.jpeg");
+  cv::Mat street3 = cv::imread("../expSamples/StreetView/street4.jpeg");
+  DetectedImg detectedImg;
+  detectedImg.loadImgs(street1);
+  detectedImg.loadImgs(street2);
+  detectedImg.loadImgs(street3);
+  dogClassifierInit(detectedImg);
+
+  for (int i = 0; i < detectedImg.getSize(); i++) {
+    if (detectedImg.viewResult(i) == 1)
+      std::cout << "Image_" << i << " has dogs" << std::endl;
+    else
+      std::cout << "Image_" << i << " has no dog" << std::endl;
+  }
   return 0;
 }

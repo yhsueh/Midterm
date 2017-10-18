@@ -1,4 +1,4 @@
-add_executable(shell-app demo.cpp Classifier.cpp)
+add_executable(shell-app demo.cpp Classifier.cpp DetectedImg.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
 )

@@ -20,7 +20,7 @@ else()
     set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -g")
 endif()
 find_package(OpenCV REQUIRED)
-find_package(Boost 1.58 COMPONENTS date_time filesystem system)
+find_package(Boost 1.55 COMPONENTS date_time filesystem system)
 include(CMakeToolsHelpers OPTIONAL)
 include_directories(${OpenCV_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 

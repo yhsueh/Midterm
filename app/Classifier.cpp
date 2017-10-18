@@ -1,10 +1,10 @@
 /** @file Classifier.cpp
-* @brief Classifier class that uses the extracted HOG features of the sample
-* images to train linear SVM. 
-* @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
-*
-* A binary classifier class is created to train to detect dogs in a random images.
-*/
+ * @brief Classifier class that uses the extracted HOG features of the sample
+ * images to train linear SVM. 
+ * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
+ *
+ * A binary classifier class is created to train to detect dogs in a random images.
+ */
 #include "Classifier.hpp"
 #include <boost/filesystem.hpp>
 #include <opencv2/core/core.hpp>
@@ -112,10 +112,12 @@ void Classifier::extractHOGandTrain() {
       cv::GaussianBlur(testSample, testSample, cv::Size(3, 3), 1);
       cv::imshow("test", testSample);
       cv::waitKey();
+      cv::destroyWindow("test");
       hog.compute(testSample, testingDecs);
       cv::Mat predictions;
       svm->predict(testingDecs, predictions);
-      std::cout << "Prediction: " << predictions.at<float>(0) << std::endl;
+      std::cout << "Prediction Sample Test (1 dog: -1 not dog): "
+          << predictions.at<float>(0) << std::endl;
     }
     // GOOGLETEST LENGTH
   }
@@ -127,8 +129,6 @@ void Classifier::get_svm_detector() {
   // get the support vectors
   cv::Mat sv = svm->getSupportVectors();
   const int sv_total = sv.rows;
-
-  std::cout << "sv.cols: " << sv.cols << std::endl;
 
   // get the decision function
   cv::Mat alpha, svidx;
@@ -146,17 +146,9 @@ void Classifier::get_svm_detector() {
   primalSupportVector[sv.cols] = static_cast<float>(-rho);
 }
 
-bool Classifier::predictImg(std::string streetPath) {
+void Classifier::predictImg(DetectedImg& detectedImgs) {
   // GOOGLETEST Size
-  bool dogAlert = false;
   std::cout << "PredictImg process begins" << std::endl;
-  std::cout << streetPath << std::endl;
-  cv::Mat street = cv::imread(streetPath);
-  cv::GaussianBlur(street, street, cv::Size(3, 3), 7);
-  cv::resize(street, street, cv::Size(500, 400));
-
-  // cv::imshow("HI",street);
-  // cv::waitKey();
   cv::HOGDescriptor hog(cv::Size(64, 64),  // WinSize
                         cv::Size(8, 8),  // blocksize
                         cv::Size(4, 4),  // blockStride
@@ -171,26 +163,30 @@ bool Classifier::predictImg(std::string streetPath) {
       1);  // Use signed gradients
 
   hog.setSVMDetector(primalSupportVector);
-
   std::vector < cv::Rect > detections;
   std::vector<double> foundWeights;
 
-  hog.detectMultiScale(street, detections, foundWeights, 0, cv::Size(4, 4));
+  for (int i = 0; i < detectedImgs.getSize(); i++) {
+    int dogAlert = -1;
+    cv::Mat street = detectedImgs.getImgs(i);
+    cv::GaussianBlur(street, street, cv::Size(3, 3), 7);
+    cv::resize(street, street, cv::Size(500, 400));
 
-  std::cout << "detectedSize" << detections.size() << std::endl;
-
-  for (size_t i = 0; i < detections.size(); i++) {
-    if (foundWeights[i] > 1 && detections[i].y > 140) {
-      cv::rectangle(street, detections[i], cv::Scalar(0, 255, 0), 1);
-      dogAlert = true;
+    // cv::imshow("HI",street);
+    // cv::waitKey();
+    hog.detectMultiScale(street, detections, foundWeights, 0, cv::Size(4, 4));
+    for (size_t i = 0; i < detections.size(); i++) {
+      if (foundWeights[i] > 1 && detections[i].y > 140
+          && foundWeights[i] < 3.5) {
+        cv::rectangle(street, detections[i], cv::Scalar(0, 255, 0), 1);
+        dogAlert = 1;
+      }
     }
-    if (testSampleFlag) {
-      std::cout << "Weights" << foundWeights[i] << std::endl;
-      cv::imshow("testing", street);
-      cv::waitKey();
-    }
+    cv::imshow("streetView", street);
+    cv::waitKey();
+    cv::destroyWindow("streetView");
+    detectedImgs.setResult(dogAlert);
   }
-  return dogAlert;
 }
 
 void Classifier::imgInit(std::string &trainPath) {
