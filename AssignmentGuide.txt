@@ -1,3 +1,0 @@
-Utilize agile development in an approximately one-week sprint schedule and follow SIP. Prioritize work to be done and features in a backlog. Set up a GitHub repository for your development work and Google Sheet with appropriate user permissions. Set up Travis and Coveralls for automated unit testing. Conduct sprint planning for week 1, complete with task assignments and estimated duration/due date. Outline UML diagrams (structure and activity). Add a “UML” directory to the repository and an “initial” subdirectory. Add UML files to the initial directory (PDF, PNG, or JPEG). If design iterations occur during implementation, revise UML diagrams and add to a “revised” sub-directory.
-
-Submit: Share with Prof.: Initial GitHub repository containing readme. Submit UML diagrams.

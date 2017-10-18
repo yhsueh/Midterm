@@ -1,9 +1,11 @@
 /** @file Classifier.cpp
- * @brief Classifier class that uses the extracted HOG features of the sample
- * images to train linear SVM. 
+ * @brief This is cpp file for Classifier class which extracts HOG features from sample images and trains binary class
+ * classifier for dogs and supposedly humans.
+ * @author Yuyu Hsueh
  * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
- *
- * A binary classifier class is created to train to detect dogs in a random images.
+ * Licensor hereby grants Licensee a Sublicensable, Non-assignable & non-transferable, Pepetual, Commercial, Royalty free.
+ * Including the rights to create but not distribute derivative works, Non-exclusive license, all with accordance with the 
+ * terms set forth and other legal restrictions set forth in 3rd party software used while running Software.
  */
 #include "Classifier.hpp"
 #include <boost/filesystem.hpp>
