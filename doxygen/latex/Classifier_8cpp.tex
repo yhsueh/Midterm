@@ -1,0 +1,39 @@
+\hypertarget{Classifier_8cpp}{}\section{app/\+Classifier.cpp File Reference}
+\label{Classifier_8cpp}\index{app/\+Classifier.\+cpp@{app/\+Classifier.\+cpp}}
+
+
+This is cpp file for \hyperlink{classClassifier}{Classifier} class which extracts H\+OG features from sample images and trains binary class classifier for dogs and supposedly humans.  
+
+
+{\ttfamily \#include \char`\"{}Classifier.\+hpp\char`\"{}}\\*
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/core/core.\+hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/objdetect/objdetect.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for Classifier.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Classifier_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+This is cpp file for \hyperlink{classClassifier}{Classifier} class which extracts H\+OG features from sample images and trains binary class classifier for dogs and supposedly humans. 
+
+\hyperlink{classClassifier}{Classifier} class that uses the extracted H\+OG features of the sample images to train linear S\+VM.
+
+\begin{DoxyAuthor}{Author}
+Yuyu Hsueh 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2017 Yuyu Hsueh. All rights reserved. Licensor hereby grants Licensee a Sublicensable, Non-\/assignable \& non-\/transferable, Pepetual, Commercial, Royalty free. Including the rights to create but not distribute derivative works, Non-\/exclusive license, all with accordance with the terms set forth and other legal restrictions set forth in 3rd party software used while running Software.
+
+Copyright 2017 Yuyu Hsueh. All rights reserved.
+\end{DoxyCopyright}
+A binary classifier class is created to train to detect dogs in a random images. 

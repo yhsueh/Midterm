@@ -1,0 +1,123 @@
+\hypertarget{classDetectedImg}{}\section{Detected\+Img Class Reference}
+\label{classDetectedImg}\index{Detected\+Img@{Detected\+Img}}
+
+
+{\ttfamily \#include $<$Detected\+Img.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDetectedImg_aacfdecaa861ddc2ce7747d1f6e2f2345}{Detected\+Img} ()
+\item 
+void \hyperlink{classDetectedImg_a625f4bb19646eb053e866391bea3d1d7}{load\+Imgs} (cv\+::\+Mat \&)
+\item 
+cv\+::\+Mat \& \hyperlink{classDetectedImg_ab9978594a666a1886902c26b80536987}{get\+Imgs} (int ord)
+\item 
+int \hyperlink{classDetectedImg_a7814c694d6b56bcf521e07fcb5b8ab60}{view\+Result} (int order)
+\item 
+void \hyperlink{classDetectedImg_afd084418ea8fed43f56c6596f80899d1}{set\+Result} (int)
+\item 
+int \hyperlink{classDetectedImg_a14ad13a688df84c69e11265af48f517c}{get\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \hyperlink{classDetectedImg_a5954f5c930b5c041debd10338d02f195}{detected\+Imgs}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classDetectedImg_a498ad454ddc09681abfef4b6ac1da3a1}{result}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Detected\+Img@{Detected\+Img}!Detected\+Img@{Detected\+Img}}
+\index{Detected\+Img@{Detected\+Img}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{Detected\+Img()}{DetectedImg()}}]{\setlength{\rightskip}{0pt plus 5cm}Detected\+Img\+::\+Detected\+Img (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classDetectedImg_aacfdecaa861ddc2ce7747d1f6e2f2345}{}\label{classDetectedImg_aacfdecaa861ddc2ce7747d1f6e2f2345}
+
+
+\subsection{Member Function Documentation}
+\index{Detected\+Img@{Detected\+Img}!get\+Imgs@{get\+Imgs}}
+\index{get\+Imgs@{get\+Imgs}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{get\+Imgs(int ord)}{getImgs(int ord)}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat \& Detected\+Img\+::get\+Imgs (
+\begin{DoxyParamCaption}
+\item[{int}]{ord}
+\end{DoxyParamCaption}
+)}\hypertarget{classDetectedImg_ab9978594a666a1886902c26b80536987}{}\label{classDetectedImg_ab9978594a666a1886902c26b80536987}
+Retract images from detected image vector 
+\begin{DoxyParams}{Parameters}
+{\em cv\+::\+Mat} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cv\+::\+Mat at specific index in the vector
+\end{DoxyReturn}
+\index{Detected\+Img@{Detected\+Img}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{get\+Size()}{getSize()}}]{\setlength{\rightskip}{0pt plus 5cm}int Detected\+Img\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classDetectedImg_a14ad13a688df84c69e11265af48f517c}{}\label{classDetectedImg_a14ad13a688df84c69e11265af48f517c}
+\index{Detected\+Img@{Detected\+Img}!load\+Imgs@{load\+Imgs}}
+\index{load\+Imgs@{load\+Imgs}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{load\+Imgs(cv\+::\+Mat \&)}{loadImgs(cv::Mat &)}}]{\setlength{\rightskip}{0pt plus 5cm}void Detected\+Img\+::load\+Imgs (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{img}
+\end{DoxyParamCaption}
+)}\hypertarget{classDetectedImg_a625f4bb19646eb053e866391bea3d1d7}{}\label{classDetectedImg_a625f4bb19646eb053e866391bea3d1d7}
+Store images from detected image vector 
+\begin{DoxyParams}{Parameters}
+{\em cv\+::\+Mat} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Detected\+Img@{Detected\+Img}!set\+Result@{set\+Result}}
+\index{set\+Result@{set\+Result}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{set\+Result(int)}{setResult(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Detected\+Img\+::set\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{rest}
+\end{DoxyParamCaption}
+)}\hypertarget{classDetectedImg_afd084418ea8fed43f56c6596f80899d1}{}\label{classDetectedImg_afd084418ea8fed43f56c6596f80899d1}
+Set S\+VM result for each image 
+\begin{DoxyParams}{Parameters}
+{\em S\+VM} & result integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Detected\+Img@{Detected\+Img}!view\+Result@{view\+Result}}
+\index{view\+Result@{view\+Result}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{view\+Result(int order)}{viewResult(int order)}}]{\setlength{\rightskip}{0pt plus 5cm}int Detected\+Img\+::view\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{order}
+\end{DoxyParamCaption}
+)}\hypertarget{classDetectedImg_a7814c694d6b56bcf521e07fcb5b8ab60}{}\label{classDetectedImg_a7814c694d6b56bcf521e07fcb5b8ab60}
+Get S\+VM result for each image 
+\begin{DoxyParams}{Parameters}
+{\em S\+VM} & result integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+VM result integer at specified index in the vector
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Detected\+Img@{Detected\+Img}!detected\+Imgs@{detected\+Imgs}}
+\index{detected\+Imgs@{detected\+Imgs}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{detected\+Imgs}{detectedImgs}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Mat$>$ Detected\+Img\+::detected\+Imgs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDetectedImg_a5954f5c930b5c041debd10338d02f195}{}\label{classDetectedImg_a5954f5c930b5c041debd10338d02f195}
+\index{Detected\+Img@{Detected\+Img}!result@{result}}
+\index{result@{result}!Detected\+Img@{Detected\+Img}}
+\subsubsection[{\texorpdfstring{result}{result}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Detected\+Img\+::result\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classDetectedImg_a498ad454ddc09681abfef4b6ac1da3a1}{}\label{classDetectedImg_a498ad454ddc09681abfef4b6ac1da3a1}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{DetectedImg_8hpp}{Detected\+Img.\+hpp}\item 
+app/\hyperlink{DetectedImg_8cpp}{Detected\+Img.\+cpp}\end{DoxyCompactItemize}

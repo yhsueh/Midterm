@@ -1,0 +1,354 @@
+\hypertarget{cpplint_8py}{}\section{cpplint.\+py File Reference}
+\label{cpplint_8py}\index{cpplint.\+py@{cpplint.\+py}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcpplint_1_1__IncludeState}{cpplint.\+\_\+\+Include\+State}
+\item 
+class \hyperlink{classcpplint_1_1__CppLintState}{cpplint.\+\_\+\+Cpp\+Lint\+State}
+\item 
+class \hyperlink{classcpplint_1_1__FunctionState}{cpplint.\+\_\+\+Function\+State}
+\item 
+class \hyperlink{classcpplint_1_1__IncludeError}{cpplint.\+\_\+\+Include\+Error}
+\item 
+class \hyperlink{classcpplint_1_1FileInfo}{cpplint.\+File\+Info}
+\item 
+class \hyperlink{classcpplint_1_1CleansedLines}{cpplint.\+Cleansed\+Lines}
+\item 
+class \hyperlink{classcpplint_1_1__BlockInfo}{cpplint.\+\_\+\+Block\+Info}
+\item 
+class \hyperlink{classcpplint_1_1__ExternCInfo}{cpplint.\+\_\+\+Extern\+C\+Info}
+\item 
+class \hyperlink{classcpplint_1_1__ClassInfo}{cpplint.\+\_\+\+Class\+Info}
+\item 
+class \hyperlink{classcpplint_1_1__NamespaceInfo}{cpplint.\+\_\+\+Namespace\+Info}
+\item 
+class \hyperlink{classcpplint_1_1__PreprocessorInfo}{cpplint.\+\_\+\+Preprocessor\+Info}
+\item 
+class \hyperlink{classcpplint_1_1NestingState}{cpplint.\+Nesting\+State}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecpplint}{cpplint}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecpplint_a28e546a8f20e32ef7dcf4ecbecd8b367}{cpplint.\+Process\+Hpp\+Headers\+Option} (val)
+\item 
+def \hyperlink{namespacecpplint_ad4fd5ecbae967884b0a77ee8b3ba1e16}{cpplint.\+Is\+Header\+Extension} (file\+\_\+extension)
+\item 
+def \hyperlink{namespacecpplint_a52ae8f1d9436d14ddb94ceed06026c43}{cpplint.\+Parse\+Nolint\+Suppressions} (filename, raw\+\_\+line, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a316dc237dc0cde7bafec3c30d5624cac}{cpplint.\+Process\+Global\+Suppresions} (lines)
+\item 
+def \hyperlink{namespacecpplint_a1d92dc3582da477f98ab5b85bd13fea0}{cpplint.\+Reset\+Nolint\+Suppressions} ()
+\item 
+def \hyperlink{namespacecpplint_a0b9e1f991f1a3d02cda3234784241d1f}{cpplint.\+Is\+Error\+Suppressed\+By\+Nolint} (category, linenum)
+\item 
+def \hyperlink{namespacecpplint_a73ac2ecfcd9c52b4a3755176c68dea7e}{cpplint.\+Match} (pattern, s)
+\item 
+def \hyperlink{namespacecpplint_a1b85a5657aeab8b4a0ed85e06aed3576}{cpplint.\+Replace\+All} (pattern, rep, s)
+\item 
+def \hyperlink{namespacecpplint_a75eae6bb88590e904f751502c8ee4bab}{cpplint.\+Search} (pattern, s)
+\item 
+def \hyperlink{namespacecpplint_a0ab5051e7ab04f94927ce195bbb8be3b}{cpplint.\+\_\+\+Is\+Source\+Extension} (s)
+\item 
+def \hyperlink{namespacecpplint_ad1c7db6627a6ec1a5ccc44e92df843a9}{cpplint.\+\_\+\+Output\+Format} ()
+\item 
+def \hyperlink{namespacecpplint_adad6a57302f9035d199af75eedcce22b}{cpplint.\+\_\+\+Set\+Output\+Format} (output\+\_\+format)
+\item 
+def \hyperlink{namespacecpplint_a0bf54de5442c0531c3ead8d7a540d9e0}{cpplint.\+\_\+\+Verbose\+Level} ()
+\item 
+def \hyperlink{namespacecpplint_aac1e1c73e40b46a9f9e901756de3e265}{cpplint.\+\_\+\+Set\+Verbose\+Level} (level)
+\item 
+def \hyperlink{namespacecpplint_ac20157c72a828b9e9f0548111d6c7dcd}{cpplint.\+\_\+\+Set\+Counting\+Style} (level)
+\item 
+def \hyperlink{namespacecpplint_a3dfbd636317204434eec76acd2bb670a}{cpplint.\+\_\+\+Filters} ()
+\item 
+def \hyperlink{namespacecpplint_a314899344c86ce18e2cb26601de8acfd}{cpplint.\+\_\+\+Set\+Filters} (filters)
+\item 
+def \hyperlink{namespacecpplint_aea7c4f0262604e3ea337492943a6ed4b}{cpplint.\+\_\+\+Add\+Filters} (filters)
+\item 
+def \hyperlink{namespacecpplint_a28c5d8937c4a0e6e15b1960754edb7d3}{cpplint.\+\_\+\+Backup\+Filters} ()
+\item 
+def \hyperlink{namespacecpplint_ad07c4846dfa0283a4e2c53bbaae6052d}{cpplint.\+\_\+\+Restore\+Filters} ()
+\item 
+def \hyperlink{namespacecpplint_ac1b603bde4e58c40825f841f97ca18e6}{cpplint.\+\_\+\+Should\+Print\+Error} (category, confidence, linenum)
+\item 
+def \hyperlink{namespacecpplint_ae51e76d6d73b36b9e965d2ac9d21d7c2}{cpplint.\+Error} (filename, linenum, category, confidence, message)
+\item 
+def \hyperlink{namespacecpplint_a034b93866a853c2e21577fb371a7fa9d}{cpplint.\+Is\+Cpp\+String} (line)
+\item 
+def \hyperlink{namespacecpplint_a61b3f81ef467e7cb417d13e9051180fc}{cpplint.\+Cleanse\+Raw\+Strings} (raw\+\_\+lines)
+\item 
+def \hyperlink{namespacecpplint_af0404401670283c9d4f948180e427401}{cpplint.\+Find\+Next\+Multi\+Line\+Comment\+Start} (lines, lineix)
+\item 
+def \hyperlink{namespacecpplint_a4965d6f615333f43155d9e430471e228}{cpplint.\+Find\+Next\+Multi\+Line\+Comment\+End} (lines, lineix)
+\item 
+def \hyperlink{namespacecpplint_a3a5f71cdc2e78491b4bedde8a0103679}{cpplint.\+Remove\+Multi\+Line\+Comments\+From\+Range} (lines, begin, end)
+\item 
+def \hyperlink{namespacecpplint_ac259a6d0f292aeec05dee7ca312e1fc2}{cpplint.\+Remove\+Multi\+Line\+Comments} (filename, lines, error)
+\item 
+def \hyperlink{namespacecpplint_ad795aa89f263838ec59fb0e7c52c842a}{cpplint.\+Cleanse\+Comments} (line)
+\item 
+def \hyperlink{namespacecpplint_a6e623c46c1ae3bf650454744a693a633}{cpplint.\+Find\+End\+Of\+Expression\+In\+Line} (line, startpos, stack)
+\item 
+def \hyperlink{namespacecpplint_af254258f584f59c87fcfd755e3c9017a}{cpplint.\+Close\+Expression} (clean\+\_\+lines, linenum, pos)
+\item 
+def \hyperlink{namespacecpplint_a8572f47efb3bc11632d1192fd74bb7eb}{cpplint.\+Find\+Start\+Of\+Expression\+In\+Line} (line, endpos, stack)
+\item 
+def \hyperlink{namespacecpplint_a15cd96cbf1c13e655e156fbd98cf0bae}{cpplint.\+Reverse\+Close\+Expression} (clean\+\_\+lines, linenum, pos)
+\item 
+def \hyperlink{namespacecpplint_a0ad6bf921300c829db3696b81fa52d20}{cpplint.\+Check\+For\+Copyright} (filename, lines, error)
+\item 
+def \hyperlink{namespacecpplint_a1b5cb7c1367845d7c7079eac5ea61dc8}{cpplint.\+Get\+Indent\+Level} (line)
+\item 
+def \hyperlink{namespacecpplint_a3f143d4e8f70c0fd05e3f0ce81b0cc9a}{cpplint.\+Get\+Header\+Guard\+C\+P\+P\+Variable} (filename)
+\item 
+def \hyperlink{namespacecpplint_a3694fa1b195f49a0d78dfc81ee665eec}{cpplint.\+Check\+For\+Header\+Guard} (filename, clean\+\_\+lines, error)
+\item 
+def \hyperlink{namespacecpplint_ab549dcced7ca1d4b24538ec52b42439e}{cpplint.\+Check\+Header\+File\+Included} (filename, include\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_a03c0e0d285b02b0e26ec514761654da8}{cpplint.\+Check\+For\+Bad\+Characters} (filename, lines, error)
+\item 
+def \hyperlink{namespacecpplint_a7a594af230939932174dd5743088027d}{cpplint.\+Check\+For\+Newline\+At\+E\+OF} (filename, lines, error)
+\item 
+def \hyperlink{namespacecpplint_a81c4baf76bde576f56661c22d01e470d}{cpplint.\+Check\+For\+Multiline\+Comments\+And\+Strings} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a9c406c00843a2c47058b1e9dec4e5b11}{cpplint.\+Check\+Posix\+Threading} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ab066834feaa7bf5a92982bbfb0af89c1}{cpplint.\+Check\+Vlog\+Arguments} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a8b47da46bc61f72ab12e9228acc3a0cd}{cpplint.\+Check\+Invalid\+Increment} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a5a95ee1e23638e172a3361723503329c}{cpplint.\+Is\+Macro\+Definition} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_adde7d60b6354b40d9ef9acda6e847d7b}{cpplint.\+Is\+Forward\+Class\+Declaration} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_a954b179c4037e5da8ac599cce095c37e}{cpplint.\+Check\+For\+Non\+Standard\+Constructs} (filename, clean\+\_\+lines, linenum, nesting\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_a2ea8b2c917d5ce466287e1c6fe26f0db}{cpplint.\+Check\+Spacing\+For\+Function\+Call} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_adf59429f3dd145e978624fe239809260}{cpplint.\+Is\+Blank\+Line} (line)
+\item 
+def \hyperlink{namespacecpplint_a7c5964127d06521a2a05fbb28cc26478}{cpplint.\+Check\+For\+Namespace\+Indentation} (filename, nesting\+\_\+state, clean\+\_\+lines, line, error)
+\item 
+def \hyperlink{namespacecpplint_a2699a7cad55a82cab5f73c012747203e}{cpplint.\+Check\+For\+Function\+Lengths} (filename, clean\+\_\+lines, linenum, function\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_af126b85f4c25f359c40ce349f4eb7a2d}{cpplint.\+Check\+Comment} (line, filename, linenum, next\+\_\+line\+\_\+start, error)
+\item 
+def \hyperlink{namespacecpplint_a73e82f51a8d59c816db26b5f797b3431}{cpplint.\+Check\+Spacing} (filename, clean\+\_\+lines, linenum, nesting\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_a6a15b27f48cfd70fbf76f595c34f6d9e}{cpplint.\+Check\+Operator\+Spacing} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_aacf5fa793ab27c7038e376d6a4c53d87}{cpplint.\+Check\+Parenthesis\+Spacing} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a46d2c48a2d4e747feee44616af987bdf}{cpplint.\+Check\+Comma\+Spacing} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a39f66286af1f183c73af6a8e45ba0a58}{cpplint.\+\_\+\+Is\+Type} (clean\+\_\+lines, nesting\+\_\+state, expr)
+\item 
+def \hyperlink{namespacecpplint_a205bb76a59359eb1c0be86567bbc5256}{cpplint.\+Check\+Braces\+Spacing} (filename, clean\+\_\+lines, linenum, nesting\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_a6e55ab13af2fa8b8e1f50e09aed592b8}{cpplint.\+Is\+Decltype} (clean\+\_\+lines, linenum, column)
+\item 
+def \hyperlink{namespacecpplint_abc4e2f3f48debd6ae3a9561d052a955b}{cpplint.\+Check\+Section\+Spacing} (filename, clean\+\_\+lines, class\+\_\+info, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a27743480b080a71eb8a0320da2ca0fa3}{cpplint.\+Get\+Previous\+Non\+Blank\+Line} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_a3f0a4d2ab1846bf487c742dc88946e3e}{cpplint.\+Check\+Braces} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a725663cb5a341fbf726f2ac8fa4e61a3}{cpplint.\+Check\+Trailing\+Semicolon} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a9c8aa68644d8cb55497a7d9cb8fb12d1}{cpplint.\+Check\+Empty\+Block\+Body} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_aefff9c2eefe99656a226d11ce4d9b555}{cpplint.\+Find\+Check\+Macro} (line)
+\item 
+def \hyperlink{namespacecpplint_afc5b544f640cd11be2665e6bb4646de7}{cpplint.\+Check\+Check} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a47f66a697e177c06b56491613fbc2d38}{cpplint.\+Check\+Alt\+Tokens} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ae55f74f34d41b59cf262511c5944209a}{cpplint.\+Get\+Line\+Width} (line)
+\item 
+def \hyperlink{namespacecpplint_acfc546daa5947842cb01af319dcb482b}{cpplint.\+Check\+Style} (filename, clean\+\_\+lines, linenum, file\+\_\+extension, nesting\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_af644bfa65494e90ea688096bfc07e4b5}{cpplint.\+\_\+\+Drop\+Common\+Suffixes} (filename)
+\item 
+def \hyperlink{namespacecpplint_a59a205a55686569a1782f09ac657eff2}{cpplint.\+\_\+\+Classify\+Include} (fileinfo, include, is\+\_\+system)
+\item 
+def \hyperlink{namespacecpplint_add7eb8486a182205bb86de635db01384}{cpplint.\+Check\+Include\+Line} (filename, clean\+\_\+lines, linenum, include\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_aa9854b8b589b54004fe00ddab7cef87e}{cpplint.\+\_\+\+Get\+Text\+Inside} (text, start\+\_\+pattern)
+\item 
+def \hyperlink{namespacecpplint_a6992d951cf4be06500f6b392ee6a8111}{cpplint.\+Check\+Language} (filename, clean\+\_\+lines, linenum, file\+\_\+extension, include\+\_\+state, nesting\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_a64fc322bcf08988b43f003ff495fbabb}{cpplint.\+Check\+Global\+Static} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_aaa8b988b9e83ad1c8964ecc0739d52e5}{cpplint.\+Check\+Printf} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ac8519cf084d818c931eac29994b03f55}{cpplint.\+Is\+Derived\+Function} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_a52e4468f674e140c256254eb0d1cf007}{cpplint.\+Is\+Out\+Of\+Line\+Method\+Definition} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_ae06fb1dd669681214573c0441b7e854f}{cpplint.\+Is\+Initializer\+List} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_a97f01c7d6e7e6d38b52744ab393d4160}{cpplint.\+Check\+For\+Non\+Const\+Reference} (filename, clean\+\_\+lines, linenum, nesting\+\_\+state, error)
+\item 
+def \hyperlink{namespacecpplint_a59c5f44ae1dbedad109809d46e80588e}{cpplint.\+Check\+Casts} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ac23d9b29d869054db2ece1e7d5196349}{cpplint.\+Check\+C\+Style\+Cast} (filename, clean\+\_\+lines, linenum, cast\+\_\+type, pattern, error)
+\item 
+def \hyperlink{namespacecpplint_a7657def0315cfe229ba436632f2d5042}{cpplint.\+Expecting\+Function\+Args} (clean\+\_\+lines, linenum)
+\item 
+def \hyperlink{namespacecpplint_a66083e7d453e845a2751e76043fcd9ea}{cpplint.\+Files\+Belong\+To\+Same\+Module} (filename\+\_\+cc, filename\+\_\+h)
+\item 
+def \hyperlink{namespacecpplint_a127416bee5c376937479b3119a727817}{cpplint.\+Update\+Include\+State} (filename, include\+\_\+dict, io=codecs)
+\item 
+def \hyperlink{namespacecpplint_a8e1a5bea9f77246f8a0ae98a23d8d04e}{cpplint.\+Check\+For\+Include\+What\+You\+Use} (filename, clean\+\_\+lines, include\+\_\+state, error, io=codecs)
+\item 
+def \hyperlink{namespacecpplint_add392d0ab0e8bcfeea6d02410229a0cc}{cpplint.\+Check\+Make\+Pair\+Uses\+Deduction} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a828985bee0575cfbb64212db74b61d9a}{cpplint.\+Check\+Redundant\+Virtual} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ab4f9b0390c702f149cec4030901d249d}{cpplint.\+Check\+Redundant\+Override\+Or\+Final} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a618e046738f246f01972bce339ee5d49}{cpplint.\+Is\+Block\+In\+Name\+Space} (nesting\+\_\+state, is\+\_\+forward\+\_\+declaration)
+\item 
+def \hyperlink{namespacecpplint_aaaeb792789007d86b0898676c00caa72}{cpplint.\+Should\+Check\+Namespace\+Indentation} (nesting\+\_\+state, is\+\_\+namespace\+\_\+indent\+\_\+item, raw\+\_\+lines\+\_\+no\+\_\+comments, linenum)
+\item 
+def \hyperlink{namespacecpplint_ac8e3b4340d0d83c8b2e7b199597b29a0}{cpplint.\+Check\+Item\+Indentation\+In\+Namespace} (filename, raw\+\_\+lines\+\_\+no\+\_\+comments, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ac7c198c2adf60fd79a3f2b4270055a3b}{cpplint.\+Process\+Line} (filename, file\+\_\+extension, clean\+\_\+lines, line, include\+\_\+state, function\+\_\+state, nesting\+\_\+state, error, extra\+\_\+check\+\_\+functions=\mbox{[}$\,$\mbox{]})
+\item 
+def \hyperlink{namespacecpplint_a386f43855367cc82348b0e2834e5cdc0}{cpplint.\+Flag\+Cxx11\+Features} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_a744a4eecd461be0235779b03d34d6daf}{cpplint.\+Flag\+Cxx14\+Features} (filename, clean\+\_\+lines, linenum, error)
+\item 
+def \hyperlink{namespacecpplint_ace3e46f0fab9638ad0e786037a5ca96c}{cpplint.\+Process\+File\+Data} (filename, file\+\_\+extension, lines, error, extra\+\_\+check\+\_\+functions=\mbox{[}$\,$\mbox{]})
+\item 
+def \hyperlink{namespacecpplint_a6b67f01b8b199f5f6a7481fc0fb53878}{cpplint.\+Process\+Config\+Overrides} (filename)
+\item 
+def \hyperlink{namespacecpplint_a41785091b61e8719f4a4a886eb20fe43}{cpplint.\+Process\+File} (filename, vlevel, extra\+\_\+check\+\_\+functions=\mbox{[}$\,$\mbox{]})
+\item 
+def \hyperlink{namespacecpplint_a57542503fc1cce3e5c7171fc32d6ba05}{cpplint.\+Print\+Usage} (message)
+\item 
+def \hyperlink{namespacecpplint_a3b1a047aa772a0d7d049d29c8ee62aba}{cpplint.\+Print\+Categories} ()
+\item 
+def \hyperlink{namespacecpplint_a57476f6a7321d342db7b7ca98d80bd27}{cpplint.\+Parse\+Arguments} (args)
+\item 
+def \hyperlink{namespacecpplint_a03dd39c6bfb4337676fcfaf5cd797c91}{cpplint.\+main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacecpplint_a41b929f9dd8e3b70c0bc50f2e09bff36}{cpplint.\+\_\+\+U\+S\+A\+GE}
+\item 
+list \hyperlink{namespacecpplint_a443dd7edd596a47a3973064c86d24474}{cpplint.\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+T\+E\+G\+O\+R\+I\+ES}
+\item 
+list \hyperlink{namespacecpplint_a57f33bd76a6086498bdad77f4d921fdc}{cpplint.\+\_\+\+L\+E\+G\+A\+C\+Y\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+T\+E\+G\+O\+R\+I\+ES}
+\item 
+list \hyperlink{namespacecpplint_af698c82fac7cff7d454fd8ca2be35e68}{cpplint.\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+T\+E\+RS} = \mbox{[}\textquotesingle{}-\/build/include\+\_\+alpha\textquotesingle{}\mbox{]}
+\item 
+list \hyperlink{namespacecpplint_a32c68628f86e9d7c90d1cdb52277dbcc}{cpplint.\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+E\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+I\+ES}
+\item 
+list \hyperlink{namespacecpplint_aa91fc7f951bf23aa73c820508ca6ff7d}{cpplint.\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+E\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+I\+ES}
+\item 
+\hyperlink{namespacecpplint_a4854144fb2320157db25efaf2fddcdff}{cpplint.\+\_\+\+C\+P\+P\+\_\+\+H\+E\+A\+D\+E\+RS}
+\item 
+\hyperlink{namespacecpplint_afd2511b963c71a6c7281f7f85370c808}{cpplint.\+\_\+\+T\+Y\+P\+ES}
+\item 
+\hyperlink{namespacecpplint_abedff37ffb696f5ee67db5d535f29bcd}{cpplint.\+\_\+\+T\+H\+I\+R\+D\+\_\+\+P\+A\+R\+T\+Y\+\_\+\+H\+E\+A\+D\+E\+R\+S\+\_\+\+P\+A\+T\+T\+E\+RN}
+\item 
+string \hyperlink{namespacecpplint_ad2dbcaa297b928362b95867fdbf2b278}{cpplint.\+\_\+\+T\+E\+S\+T\+\_\+\+F\+I\+L\+E\+\_\+\+S\+U\+F\+F\+IX} = r\textquotesingle{}(\+\_\+test$\vert$\+\_\+unittest$\vert$\+\_\+regtest)\$\textquotesingle{}
+\item 
+\hyperlink{namespacecpplint_a8cd8b98aa00e581d653067079f82c7ab}{cpplint.\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+C\+O\+N\+D\+I\+T\+I\+O\+N\+A\+L\+\_\+\+B\+O\+D\+Y\+\_\+\+P\+A\+T\+T\+E\+RN} = re.\+compile(r\textquotesingle{}$^\wedge$\textbackslash{}s$\ast$\$\textquotesingle{}, re.\+D\+O\+T\+A\+LL)
+\item 
+list \hyperlink{namespacecpplint_a96865866cf9b608cbe21c0549782e33c}{cpplint.\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+A\+C\+R\+OS}
+\item 
+\hyperlink{namespacecpplint_aa29e61cc2dc32e1e9f61ecaed2907b48}{cpplint.\+\_\+\+C\+H\+E\+C\+K\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT} = dict(\mbox{[}(m, \{\}) for m in \+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+A\+C\+R\+OS\mbox{]})
+\item 
+dictionary \hyperlink{namespacecpplint_a9f6ea78f990abb6ee767f35092008c75}{cpplint.\+\_\+\+A\+L\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+NT}
+\item 
+\hyperlink{namespacecpplint_a06836e29f41961aead03ec8aadd1cecd}{cpplint.\+\_\+\+A\+L\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+R\+E\+P\+L\+A\+C\+E\+M\+E\+N\+T\+\_\+\+P\+A\+T\+T\+E\+RN}
+\item 
+int \hyperlink{namespacecpplint_a845e252934563f3b8dbab7cbbd81929d}{cpplint.\+\_\+\+C\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+D\+ER} = 1
+\item 
+int \hyperlink{namespacecpplint_aa9513a195daca7c7835216243625060d}{cpplint.\+\_\+\+C\+P\+P\+\_\+\+S\+Y\+S\+\_\+\+H\+E\+A\+D\+ER} = 2
+\item 
+int \hyperlink{namespacecpplint_a01c68489ef7fc81a65e23ed29a3cc77a}{cpplint.\+\_\+\+L\+I\+K\+E\+L\+Y\+\_\+\+M\+Y\+\_\+\+H\+E\+A\+D\+ER} = 3
+\item 
+int \hyperlink{namespacecpplint_a7c70213e94a156b6c861f1e3d18bca48}{cpplint.\+\_\+\+P\+O\+S\+S\+I\+B\+L\+E\+\_\+\+M\+Y\+\_\+\+H\+E\+A\+D\+ER} = 4
+\item 
+int \hyperlink{namespacecpplint_a5fad80255610fbd2b1e24d4705806378}{cpplint.\+\_\+\+O\+T\+H\+E\+R\+\_\+\+H\+E\+A\+D\+ER} = 5
+\item 
+int \hyperlink{namespacecpplint_a03d7f3e1fb21e3da0a3c4ae1ca9f771a}{cpplint.\+\_\+\+N\+O\+\_\+\+A\+SM} = 0
+\item 
+int \hyperlink{namespacecpplint_a5b040d60ab9e1d1e1971996561a620e2}{cpplint.\+\_\+\+I\+N\+S\+I\+D\+E\+\_\+\+A\+SM} = 1
+\item 
+int \hyperlink{namespacecpplint_a6b53db7569ac305c328d95092cf45f1a}{cpplint.\+\_\+\+E\+N\+D\+\_\+\+A\+SM} = 2
+\item 
+int \hyperlink{namespacecpplint_a0f1f8da647bf9ced22d7834e1d27d065}{cpplint.\+\_\+\+B\+L\+O\+C\+K\+\_\+\+A\+SM} = 3
+\item 
+\hyperlink{namespacecpplint_a06e1a7cd329c1216de85c4524dbbb21c}{cpplint.\+\_\+\+M\+A\+T\+C\+H\+\_\+\+A\+SM}
+\item 
+\hyperlink{namespacecpplint_a01ccd489908488cba7973b9a17caa343}{cpplint.\+\_\+\+S\+E\+A\+R\+C\+H\+\_\+\+C\+\_\+\+F\+I\+LE}
+\item 
+\hyperlink{namespacecpplint_a0ebfae753fc7e59a9921df1bc576654c}{cpplint.\+\_\+\+S\+E\+A\+R\+C\+H\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+LE} = re.\+compile(r\textquotesingle{}\textbackslash{}b(?\+:L\+I\+N\+T\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+F\+I\+LE)\textquotesingle{})
+\item 
+dictionary \hyperlink{namespacecpplint_af7e2f028042409f5aa8cfc52f283d134}{cpplint.\+\_\+regexp\+\_\+compile\+\_\+cache} = \{\}
+\item 
+dictionary \hyperlink{namespacecpplint_adef2c809eebe6d4b8cc2c314f1485b96}{cpplint.\+\_\+error\+\_\+suppressions} = \{\}
+\item 
+\hyperlink{namespacecpplint_aaf6dcfd2e05bfc2a4ec4f758e05d45e2}{cpplint.\+\_\+root} = None
+\item 
+int \hyperlink{namespacecpplint_ab59a11cdee470ff44dae2c9a3cf1fa22}{cpplint.\+\_\+line\+\_\+length} = 80
+\item 
+\hyperlink{namespacecpplint_ae969d2ba7b74119c32022cdb60beb15c}{cpplint.\+\_\+valid\+\_\+extensions} = set(\mbox{[}\textquotesingle{}cc\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}cpp\textquotesingle{}, \textquotesingle{}cu\textquotesingle{}, \textquotesingle{}cuh\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{namespacecpplint_aa6c6e506c79bdba0431362eca044f02f}{cpplint.\+\_\+hpp\+\_\+headers} = set(\mbox{[}\textquotesingle{}h\textquotesingle{}\mbox{]})
+\item 
+dictionary \hyperlink{namespacecpplint_aaf1984eefec12747ebd33a7d3d3fafd2}{cpplint.\+\_\+global\+\_\+error\+\_\+suppressions} = \{\}
+\item 
+\hyperlink{namespacecpplint_a8ea348311551951f3999dc9c8a25842b}{cpplint.\+\_\+cpplint\+\_\+state} = \+\_\+\+Cpp\+Lint\+State()
+\item 
+\hyperlink{namespacecpplint_acb6f93120f1c7ff091fd9dea38ee89df}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+C\+L\+E\+A\+N\+S\+E\+\_\+\+L\+I\+N\+E\+\_\+\+E\+S\+C\+A\+P\+ES}
+\item 
+string \hyperlink{namespacecpplint_a8136c2c09e0e4c2f27a9333a347dc983}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+C\+\_\+\+C\+O\+M\+M\+E\+N\+TS} = r\textquotesingle{}/\textbackslash{}$\ast$(?\+:\mbox{[}$^\wedge$$\ast$\mbox{]}$\vert$\textbackslash{}$\ast$(?!/))$\ast$\textbackslash{}$\ast$/\textquotesingle{}
+\item 
+\hyperlink{namespacecpplint_a4c7a1f6077a72f4d5b5223cca4823670}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+C\+L\+E\+A\+N\+S\+E\+\_\+\+L\+I\+N\+E\+\_\+\+C\+\_\+\+C\+O\+M\+M\+E\+N\+TS}
+\item 
+string \hyperlink{namespacecpplint_a15c14b2629b12443e8f04cc4c21751a1}{cpplint.\+\_\+\+U\+N\+S\+A\+F\+E\+\_\+\+F\+U\+N\+C\+\_\+\+P\+R\+E\+F\+IX} = r\textquotesingle{}(?\+:\mbox{[}-\/+$\ast$/=\%$^\wedge$\&$\vert$($<$\mbox{]}\textbackslash{}s$\ast$$\vert$$>$\textbackslash{}s+)\textquotesingle{}
+\item 
+tuple \hyperlink{namespacecpplint_a35b2c753549d4a10e56d6ff4ff49d52a}{cpplint.\+\_\+\+T\+H\+R\+E\+A\+D\+I\+N\+G\+\_\+\+L\+I\+ST}
+\item 
+\hyperlink{namespacecpplint_a10f826c497fc61e200b11304e42a2e72}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT}
+\item 
+\hyperlink{namespacecpplint_a055d2ef16d7385daba02715dc5da4b70}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+T\+O\+DO} = re.\+compile(r\textquotesingle{}$^\wedge$//(\textbackslash{}s$\ast$)T\+O\+DO(\textbackslash{}(.+?\textbackslash{}))?\+:?(\textbackslash{}s$\vert$\$)?\textquotesingle{})
+\item 
+\hyperlink{namespacecpplint_a93521777a401a40fe994240ff3fc570f}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+I\+N\+C\+L\+U\+DE} = re.\+compile(r\textquotesingle{}$^\wedge$\textbackslash{}s$\ast$\#\textbackslash{}s$\ast$include\textbackslash{}s$\ast$(\mbox{[}$<$\char`\"{}\mbox{]})(\mbox{[}$^\wedge$$>$\char`\"{}\mbox{]}$\ast$)\mbox{[}$>$\char`\"{}\mbox{]}.$\ast$\$\textquotesingle{})
+\item 
+\hyperlink{namespacecpplint_ab0e2ca96162172c16d79a3124d1cb160}{cpplint.\+\_\+\+R\+E\+\_\+\+F\+I\+R\+S\+T\+\_\+\+C\+O\+M\+P\+O\+N\+E\+NT} = re.\+compile(r\textquotesingle{}$^\wedge$\mbox{[}$^\wedge$-\/\+\_\+.\mbox{]}+\textquotesingle{})
+\item 
+string \hyperlink{namespacecpplint_ab2941a5b5b3ffbcbae51797eef859193}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+I\+D\+E\+NT} = r\textquotesingle{}\mbox{[}\+\_\+a-\/zA-\/Z\mbox{]}\textbackslash{}w$\ast$\textquotesingle{}
+\item 
+tuple \hyperlink{namespacecpplint_afedcf56f0eede3aa5608cbcfd09f56e1}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+T\+Y\+PE}
+\item 
+\hyperlink{namespacecpplint_ab1ef73db80238ad8d42561df04d77920}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+R\+E\+F\+\_\+\+P\+A\+R\+AM}
+\item 
+tuple \hyperlink{namespacecpplint_adee0ad93201bfc951bff10a8725c49a1}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+C\+O\+N\+S\+T\+\_\+\+R\+E\+F\+\_\+\+P\+A\+R\+AM}
+\item 
+tuple \hyperlink{namespacecpplint_a63664d5c5cd3b497c1eacb53048674e3}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+R\+E\+F\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+P\+A\+R\+AM}
+\item 
+tuple \hyperlink{namespacecpplint_a1741ee2a4dc3f33620d655f246b5162f}{cpplint.\+\_\+\+H\+E\+A\+D\+E\+R\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+I\+N\+G\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}
+\item 
+tuple \hyperlink{namespacecpplint_a0cfde54f6a4bc9c9e2e16019146e2167}{cpplint.\+\_\+\+H\+E\+A\+D\+E\+R\+S\+\_\+\+M\+A\+Y\+B\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}
+\item 
+\hyperlink{namespacecpplint_aa9034b4a8066397d074296c6c97b2c01}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+S\+T\+R\+I\+NG} = re.\+compile(r\textquotesingle{}\textbackslash{}bstring\textbackslash{}b\textquotesingle{})
+\item 
+list \hyperlink{namespacecpplint_a0f83c6a36a89cf34d052097249697389}{cpplint.\+\_\+re\+\_\+pattern\+\_\+headers\+\_\+maybe\+\_\+templates} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{namespacecpplint_af915642b63638b43de40fda5bc97760b}{cpplint.\+\_\+re\+\_\+pattern\+\_\+templates} = \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{namespacecpplint_afe92711322d062e5f8f44cf07607f237}{cpplint.\+\_\+\+R\+E\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+E\+X\+P\+L\+I\+C\+I\+T\+\_\+\+M\+A\+K\+E\+P\+A\+IR} = re.\+compile(r\textquotesingle{}\textbackslash{}bmake\+\_\+pair\textbackslash{}s$\ast$$<$\textquotesingle{})
+\end{DoxyCompactItemize}

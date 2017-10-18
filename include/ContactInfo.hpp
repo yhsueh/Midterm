@@ -1,9 +1,6 @@
-/** @file ContactInfo.hpp
- * @brief Classifier class generates binary class classifier from image samples.
- * images to train linear SVM. 
+/** @class ContactInfo.hpp
+ * @brief This class stores the identity, name, and number of the contact.
  * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
- *
- * A binary classifier class is created to train to detect dogs/blind humans in a random images.
  */
 #pragma once
 #include <iostream>

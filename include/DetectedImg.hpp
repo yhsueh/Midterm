@@ -1,5 +1,5 @@
-/** @file DetectedImg.hpp
- * @brief The class that stores the detected images and its results from SVM testing.
+/** @class DetectedImg.hpp
+ * @brief This class is the data container that stores the detected images and its results from SVM testing.
  * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
  */
 #pragma once

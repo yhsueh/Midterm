@@ -1,0 +1,7 @@
+<map id="include/DetectedImg.hpp" name="include/DetectedImg.hpp">
+<area shape="rect" id="node2" href="$DetectedImg_8cpp.html" title="This is cpp file for DetectedImg class which stores the images and its results after the SVM analysis..." alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node3" href="$Classifier_8hpp.html" title="include/Classifier.hpp" alt="" coords="176,80,323,107"/>
+<area shape="rect" id="node4" href="$Classifier_8cpp.html" title="This is cpp file for Classifier class which extracts HOG features from sample images and trains binar..." alt="" coords="46,155,173,181"/>
+<area shape="rect" id="node5" href="$demo_8cpp.html" title="This is where classifier class is called and set up. " alt="" coords="197,155,301,181"/>
+<area shape="rect" id="node6" href="$test_8cpp.html" title="testcpp is used for unit testing " alt="" coords="326,155,421,181"/>
+</map>

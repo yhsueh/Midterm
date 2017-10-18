@@ -1,0 +1,216 @@
+\hypertarget{classClassifier}{}\section{Classifier Class Reference}
+\label{classClassifier}\index{Classifier@{Classifier}}
+
+
+{\ttfamily \#include $<$Classifier.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classClassifier_ae6132b100c96a4f3d8ad3885b5acb28e}{Classifier} ()
+\item 
+\hyperlink{classClassifier_a7fde1d08d4bf994fab56cf84640a257f}{Classifier} (std\+::string path, bool flag, bool flag2)
+\item 
+void \hyperlink{classClassifier_a226bbcc78831d8693439f4ba23e1bcd0}{img\+Init} (std\+::string \&)
+\item 
+void \hyperlink{classClassifier_aa93a43ffaf16d1add48216a913d3ba9a}{set\+Save\+Path} (std\+::string savepath)
+\item 
+void \hyperlink{classClassifier_a0825644115b10e52451660dd601fd2a1}{set\+Save\+Name} (std\+::string savename)
+\item 
+void \hyperlink{classClassifier_a66f6ef3aeb96c2dd10d23bd5f50626ef}{predict\+Img} (\hyperlink{classDetectedImg}{Detected\+Img} \&)
+\item 
+std\+::string \hyperlink{classClassifier_a93b6aa34418d79a49cf0ded88b4ba463}{get\+Save\+Path} ()
+\item 
+cv\+::\+Ptr$<$ cv\+::ml\+::\+S\+VM $>$ \hyperlink{classClassifier_a6c8d55cc96aaa9b5ed65535ac96cd569}{get\+S\+VM} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classClassifier_a757b662071b067bbe507992baf6d7d3e}{img\+Denoise} ()
+\item 
+void \hyperlink{classClassifier_a139a8a52249fdacc8e0a00400fa18183}{extract\+H\+O\+Gand\+Train} ()
+\item 
+void \hyperlink{classClassifier_a9441d5066b62e74707d10af1a1b5e6ae}{get\+\_\+svm\+\_\+detector} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Ptr$<$ cv\+::ml\+::\+S\+VM $>$ \hyperlink{classClassifier_aa2a02de13d4ed5c5e66a8beb18b995c2}{svm}
+\item 
+std\+::string \hyperlink{classClassifier_a30a4d25e9c20e8f58653393153cbedd2}{load\+Path}
+\item 
+std\+::string \hyperlink{classClassifier_aaa3b30538132f9de620f4288c4bdbcf7}{save\+Path}
+\item 
+std\+::string \hyperlink{classClassifier_af53d139eac3ac347c09f6a393f5e81b7}{save\+Name}
+\item 
+std\+::vector$<$ cv\+::\+Mat $>$ \hyperlink{classClassifier_a0e360b1afe3f9536d631c1825da4089e}{images}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classClassifier_a41efa32019093c378ad37865d6bf7e02}{primal\+Support\+Vector}
+\item 
+unsigned \hyperlink{classClassifier_a252037d44fd43cf0e289a1ef6f139489}{pos\+\_\+num}
+\item 
+bool \hyperlink{classClassifier_a5ab000d06e39c7774eb13b6b8ccc655f}{load\+Flag}
+\item 
+bool \hyperlink{classClassifier_a18a40094b17a37f0132b935223993630}{test\+Sample\+Flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Classifier@{Classifier}!Classifier@{Classifier}}
+\index{Classifier@{Classifier}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{Classifier()}{Classifier()}}]{\setlength{\rightskip}{0pt plus 5cm}Classifier\+::\+Classifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classClassifier_ae6132b100c96a4f3d8ad3885b5acb28e}{}\label{classClassifier_ae6132b100c96a4f3d8ad3885b5acb28e}
+\hyperlink{classClassifier}{Classifier} constructor, the classifier is by default in loading mode \index{Classifier@{Classifier}!Classifier@{Classifier}}
+\index{Classifier@{Classifier}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{Classifier(std\+::string path, bool flag, bool flag2)}{Classifier(std::string path, bool flag, bool flag2)}}]{\setlength{\rightskip}{0pt plus 5cm}Classifier\+::\+Classifier (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{path, }
+\item[{bool}]{flag, }
+\item[{bool}]{flag2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classClassifier_a7fde1d08d4bf994fab56cf84640a257f}{}\label{classClassifier_a7fde1d08d4bf994fab56cf84640a257f}
+\hyperlink{classClassifier}{Classifier} second constructor, the classifier is in training mode 
+
+\subsection{Member Function Documentation}
+\index{Classifier@{Classifier}!extract\+H\+O\+Gand\+Train@{extract\+H\+O\+Gand\+Train}}
+\index{extract\+H\+O\+Gand\+Train@{extract\+H\+O\+Gand\+Train}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{extract\+H\+O\+Gand\+Train()}{extractHOGandTrain()}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::extract\+H\+O\+Gand\+Train (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a139a8a52249fdacc8e0a00400fa18183}{}\label{classClassifier_a139a8a52249fdacc8e0a00400fa18183}
+Extract Hog from samples Extract H\+OG features and train these features 
+\begin{DoxyParams}{Parameters}
+{\em vector} & consists of images \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Classifier@{Classifier}!get\+\_\+svm\+\_\+detector@{get\+\_\+svm\+\_\+detector}}
+\index{get\+\_\+svm\+\_\+detector@{get\+\_\+svm\+\_\+detector}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{get\+\_\+svm\+\_\+detector()}{get_svm_detector()}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::get\+\_\+svm\+\_\+detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a9441d5066b62e74707d10af1a1b5e6ae}{}\label{classClassifier_a9441d5066b62e74707d10af1a1b5e6ae}
+Derive primal SV Obtain primal S\+Vs. This function is gotten from T\+E\+S\+T\+\_\+\+H\+O\+G.\+hpp from Open\+C\+V3 
+\begin{DoxyParams}{Parameters}
+{\em All} & support vectors from all the samples \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Classifier@{Classifier}!get\+Save\+Path@{get\+Save\+Path}}
+\index{get\+Save\+Path@{get\+Save\+Path}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{get\+Save\+Path()}{getSavePath()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Classifier\+::get\+Save\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classClassifier_a93b6aa34418d79a49cf0ded88b4ba463}{}\label{classClassifier_a93b6aa34418d79a49cf0ded88b4ba463}
+\index{Classifier@{Classifier}!get\+S\+VM@{get\+S\+VM}}
+\index{get\+S\+VM@{get\+S\+VM}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{get\+S\+V\+M()}{getSVM()}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Ptr$<$cv\+::ml\+::\+S\+VM$>$ Classifier\+::get\+S\+VM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classClassifier_a6c8d55cc96aaa9b5ed65535ac96cd569}{}\label{classClassifier_a6c8d55cc96aaa9b5ed65535ac96cd569}
+\index{Classifier@{Classifier}!img\+Denoise@{img\+Denoise}}
+\index{img\+Denoise@{img\+Denoise}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{img\+Denoise()}{imgDenoise()}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::img\+Denoise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a757b662071b067bbe507992baf6d7d3e}{}\label{classClassifier_a757b662071b067bbe507992baf6d7d3e}
+Remove noise in samples Denoise samples 
+\begin{DoxyParams}{Parameters}
+{\em vector} & consists of images \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Classifier@{Classifier}!img\+Init@{img\+Init}}
+\index{img\+Init@{img\+Init}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{img\+Init(std\+::string \&)}{imgInit(std::string &)}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::img\+Init (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{train\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{classClassifier_a226bbcc78831d8693439f4ba23e1bcd0}{}\label{classClassifier_a226bbcc78831d8693439f4ba23e1bcd0}
+img\+Init takes in path string where samples are Class initialization. Load all sample images from given paths. 
+\begin{DoxyParams}{Parameters}
+{\em Path} & to the sample images \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Classifier@{Classifier}!predict\+Img@{predict\+Img}}
+\index{predict\+Img@{predict\+Img}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{predict\+Img(\+Detected\+Img \&)}{predictImg(DetectedImg &)}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::predict\+Img (
+\begin{DoxyParamCaption}
+\item[{{\bf Detected\+Img} \&}]{detected\+Imgs}
+\end{DoxyParamCaption}
+)}\hypertarget{classClassifier_a66f6ef3aeb96c2dd10d23bd5f50626ef}{}\label{classClassifier_a66f6ef3aeb96c2dd10d23bd5f50626ef}
+Analyzing images using S\+VM classifier. Its input is \hyperlink{classDetectedImg}{Detected\+Img} type. Using the primal SV to detect objects within a random image 
+\begin{DoxyParams}{Parameters}
+{\em detected\+Imgs} & of \hyperlink{classDetectedImg}{Detected\+Img} class that contains all the images for testing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\index{Classifier@{Classifier}!set\+Save\+Name@{set\+Save\+Name}}
+\index{set\+Save\+Name@{set\+Save\+Name}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{set\+Save\+Name(std\+::string savename)}{setSaveName(std::string savename)}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::set\+Save\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{savename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classClassifier_a0825644115b10e52451660dd601fd2a1}{}\label{classClassifier_a0825644115b10e52451660dd601fd2a1}
+\index{Classifier@{Classifier}!set\+Save\+Path@{set\+Save\+Path}}
+\index{set\+Save\+Path@{set\+Save\+Path}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{set\+Save\+Path(std\+::string savepath)}{setSavePath(std::string savepath)}}]{\setlength{\rightskip}{0pt plus 5cm}void Classifier\+::set\+Save\+Path (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{savepath}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classClassifier_aa93a43ffaf16d1add48216a913d3ba9a}{}\label{classClassifier_aa93a43ffaf16d1add48216a913d3ba9a}
+
+
+\subsection{Member Data Documentation}
+\index{Classifier@{Classifier}!images@{images}}
+\index{images@{images}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{images}{images}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Mat$>$ Classifier\+::images\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a0e360b1afe3f9536d631c1825da4089e}{}\label{classClassifier_a0e360b1afe3f9536d631c1825da4089e}
+Positive and negative images \index{Classifier@{Classifier}!load\+Flag@{load\+Flag}}
+\index{load\+Flag@{load\+Flag}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{load\+Flag}{loadFlag}}]{\setlength{\rightskip}{0pt plus 5cm}bool Classifier\+::load\+Flag\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a5ab000d06e39c7774eb13b6b8ccc655f}{}\label{classClassifier_a5ab000d06e39c7774eb13b6b8ccc655f}
+\index{Classifier@{Classifier}!load\+Path@{load\+Path}}
+\index{load\+Path@{load\+Path}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{load\+Path}{loadPath}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Classifier\+::load\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a30a4d25e9c20e8f58653393153cbedd2}{}\label{classClassifier_a30a4d25e9c20e8f58653393153cbedd2}
+Directory path to the classifier \index{Classifier@{Classifier}!pos\+\_\+num@{pos\+\_\+num}}
+\index{pos\+\_\+num@{pos\+\_\+num}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{pos\+\_\+num}{pos_num}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Classifier\+::pos\+\_\+num\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a252037d44fd43cf0e289a1ef6f139489}{}\label{classClassifier_a252037d44fd43cf0e289a1ef6f139489}
+Number of positive samples \index{Classifier@{Classifier}!primal\+Support\+Vector@{primal\+Support\+Vector}}
+\index{primal\+Support\+Vector@{primal\+Support\+Vector}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{primal\+Support\+Vector}{primalSupportVector}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ Classifier\+::primal\+Support\+Vector\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a41efa32019093c378ad37865d6bf7e02}{}\label{classClassifier_a41efa32019093c378ad37865d6bf7e02}
+Optimal support vector \index{Classifier@{Classifier}!save\+Name@{save\+Name}}
+\index{save\+Name@{save\+Name}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{save\+Name}{saveName}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Classifier\+::save\+Name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_af53d139eac3ac347c09f6a393f5e81b7}{}\label{classClassifier_af53d139eac3ac347c09f6a393f5e81b7}
+\hyperlink{classClassifier}{Classifier}\textquotesingle{}s name \index{Classifier@{Classifier}!save\+Path@{save\+Path}}
+\index{save\+Path@{save\+Path}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{save\+Path}{savePath}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Classifier\+::save\+Path\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_aaa3b30538132f9de620f4288c4bdbcf7}{}\label{classClassifier_aaa3b30538132f9de620f4288c4bdbcf7}
+Directory path for storing newly trained classifier \index{Classifier@{Classifier}!svm@{svm}}
+\index{svm@{svm}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{svm}{svm}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Ptr$<$cv\+::ml\+::\+S\+VM$>$ Classifier\+::svm\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_aa2a02de13d4ed5c5e66a8beb18b995c2}{}\label{classClassifier_aa2a02de13d4ed5c5e66a8beb18b995c2}
+A smartpointer to S\+VM \index{Classifier@{Classifier}!test\+Sample\+Flag@{test\+Sample\+Flag}}
+\index{test\+Sample\+Flag@{test\+Sample\+Flag}!Classifier@{Classifier}}
+\subsubsection[{\texorpdfstring{test\+Sample\+Flag}{testSampleFlag}}]{\setlength{\rightskip}{0pt plus 5cm}bool Classifier\+::test\+Sample\+Flag\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classClassifier_a18a40094b17a37f0132b935223993630}{}\label{classClassifier_a18a40094b17a37f0132b935223993630}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Classifier_8hpp}{Classifier.\+hpp}\item 
+app/\hyperlink{Classifier_8cpp}{Classifier.\+cpp}\end{DoxyCompactItemize}

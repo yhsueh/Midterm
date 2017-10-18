@@ -1,0 +1,5 @@
+<map id="include/Classifier.hpp" name="include/Classifier.hpp">
+<area shape="rect" id="node2" href="$Classifier_8cpp.html" title="This is cpp file for Classifier class which extracts HOG features from sample images and trains binar..." alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$demo_8cpp.html" title="This is where classifier class is called and set up. " alt="" coords="157,80,261,107"/>
+<area shape="rect" id="node4" href="$test_8cpp.html" title="testcpp is used for unit testing " alt="" coords="285,80,380,107"/>
+</map>

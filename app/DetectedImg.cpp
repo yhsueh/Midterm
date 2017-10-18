@@ -17,37 +17,37 @@ DetectedImg::DetectedImg() {
 }
 
 void DetectedImg::loadImgs(cv::Mat& img) {
-/**
-* @brief Store images from detected image vector
-* @param cv::Mat
-* @return none
-*/
+  /**
+   * @brief Store images from detected image vector
+   * @param cv::Mat
+   * @return none
+   */
   detectedImgs.push_back(img);
 }
 
 cv::Mat& DetectedImg::getImgs(int ord) {
-/**
-* @brief Retract images from detected image vector
-* @param cv::Mat
-* @return cv::Mat at specific index in the vector
-*/
+  /**
+   * @brief Retract images from detected image vector
+   * @param cv::Mat
+   * @return cv::Mat at specific index in the vector
+   */
   return detectedImgs[ord];
 }
 
 void DetectedImg::setResult(int rest) {
-/**
-* @brief Set SVM result for each image
-* @param SVM result integer
-* @return none
-*/
+  /**
+   * @brief Set SVM result for each image
+   * @param SVM result integer
+   * @return none
+   */
   result.push_back(rest);
 }
 
 int DetectedImg::viewResult(int order) {
-/**
-* @brief Get SVM result for each image
-* @param SVM result integer
-* @return SVM result integer at specified index in the vector
-*/
+  /**
+   * @brief Get SVM result for each image
+   * @param SVM result integer
+   * @return SVM result integer at specified index in the vector
+   */
   return result[order];
 }

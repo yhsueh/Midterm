@@ -1,4 +1,4 @@
-/** @file Classifier.cpp
+/**  @file  Classifier.cpp 
  * @brief This is cpp file for Classifier class which extracts HOG features from sample images and trains binary class
  * classifier for dogs and supposedly humans.
  * @author Yuyu Hsueh
@@ -17,11 +17,11 @@
 #include <vector>
 
 void Classifier::imgDenoise() {
-/**
-* @brief Denoise samples
-* @param vector consists of images
-* @return none
-*/
+  /**
+   * @brief Denoise samples
+   * @param vector consists of images
+   * @return none
+   */
   cv::Mat GrayImg, denoised;
   for (auto& i : images) {
     cv::GaussianBlur(i, i, cv::Size(3, 3), 1);
@@ -30,11 +30,11 @@ void Classifier::imgDenoise() {
 }
 
 void Classifier::extractHOGandTrain() {
-/**
-* @brief Extract HOG features and train these features
-* @param vector consists of images
-* @return none
-*/
+  /**
+   * @brief Extract HOG features and train these features
+   * @param vector consists of images
+   * @return none
+   */
   // Create the HOG samples
   cv::Mat sampleMatrix;
   std::string prefix = "Classifier_";
@@ -57,7 +57,6 @@ void Classifier::extractHOGandTrain() {
     hog.compute(images[0], discriptor);
     int featureSize = discriptor.size();
 
-    std::cout << "FeatureSize" << featureSize << std::endl;
     int numberOfSamples = images.size();
     cv::Mat samples(numberOfSamples, featureSize, CV_32F);
 
@@ -95,44 +94,43 @@ void Classifier::extractHOGandTrain() {
     svm->setKernel(cv::ml::SVM::LINEAR);
     svm = cv::ml::SVM::load(loadPath);
     std::cout << "Load process completes" << std::endl;
-    }
-    // Test Samples
-    if (testSampleFlag) {
-      std::vector<float> testingDecs;
-      cv::HOGDescriptor hog(cv::Size(64, 64),  // WinSize
-                            cv::Size(8, 8),  // blocksize
-                            cv::Size(4, 4),  // blockStride
-                            cv::Size(8, 8),  // CellSize
-                            9,  // nbins,
-          1,  // derivAper,
-          -1,  // winSigma,
-          0,  // histogramNormType,
-          0.2,  // L2HysThresh,
-          1,  // gammal correction,
-          64,  // nlevels=64
-          1);  // Use signed gradients
-      cv::Mat testSample = cv::imread("../expSamples/testing/1.jpg");
-      cv::resize(testSample, testSample, cv::Size(64, 64));
-      cv::GaussianBlur(testSample, testSample, cv::Size(3, 3), 1);
-      cv::imshow("test", testSample);
-      cv::waitKey();
-      cv::destroyWindow("test");
-      hog.compute(testSample, testingDecs);
-      cv::Mat predictions;
-      svm->predict(testingDecs, predictions);
-      std::cout << "Prediction Sample Test (1 dog: -1 not dog): "
-          << predictions.at<float>(0) << std::endl;
+  }
+  // Test Samples
+  if (testSampleFlag) {
+    std::vector<float> testingDecs;
+    cv::HOGDescriptor hog(cv::Size(64, 64),  // WinSize
+                          cv::Size(8, 8),  // blocksize
+                          cv::Size(4, 4),  // blockStride
+                          cv::Size(8, 8),  // CellSize
+                          9,  // nbins,
+        1,  // derivAper,
+        -1,  // winSigma,
+        0,  // histogramNormType,
+        0.2,  // L2HysThresh,
+        1,  // gammal correction,
+        64,  // nlevels=64
+        1);  // Use signed gradients
+    cv::Mat testSample = cv::imread("../expSamples/testing/1.jpg");
+    cv::resize(testSample, testSample, cv::Size(64, 64));
+    cv::GaussianBlur(testSample, testSample, cv::Size(3, 3), 1);
+    cv::imshow("test", testSample);
+    cv::waitKey();
+    cv::destroyWindow("test");
+    hog.compute(testSample, testingDecs);
+    cv::Mat predictions;
+    svm->predict(testingDecs, predictions);
+    std::cout << "Prediction Sample Test (1 dog: -1 not dog): "
+        << predictions.at<float>(0) << std::endl;
     // GOOGLETEST LENGTH
   }
 }
 
-
 void Classifier::get_svm_detector() {
-/**
-* @brief Obtain primal SVs. This function is gotten from TEST_HOG.hpp from OpenCV3
-* @param All support vectors from all the samples
-* @return none
-*/
+  /**
+   * @brief Obtain primal SVs. This function is gotten from TEST_HOG.hpp from OpenCV3
+   * @param All support vectors from all the samples
+   * @return none
+   */
   std::cout << "Begin computing primal support vector" << std::endl;
   // get the support vectors
   cv::Mat sv = svm->getSupportVectors();
@@ -155,11 +153,11 @@ void Classifier::get_svm_detector() {
 }
 
 void Classifier::predictImg(DetectedImg& detectedImgs) {
-/**
-* @brief Using the primal SV to detect objects within a random image
-* @param detectedImgs of DetectedImg class that contains all the images for testing
-* @return none
-*/
+  /**
+   * @brief Using the primal SV to detect objects within a random image
+   * @param detectedImgs of DetectedImg class that contains all the images for testing
+   * @return none
+   */
   std::cout << "PredictImg process begins" << std::endl;
   cv::HOGDescriptor hog(cv::Size(64, 64),  // WinSize
                         cv::Size(8, 8),  // blocksize
@@ -202,11 +200,11 @@ void Classifier::predictImg(DetectedImg& detectedImgs) {
 }
 
 void Classifier::imgInit(std::string &trainPath) {
-/**
-* @brief Class initialization. Load all sample images from given paths.
-* @param Path to the sample images
-* @return none
-*/
+  /**
+   * @brief Class initialization. Load all sample images from given paths.
+   * @param Path to the sample images
+   * @return none
+   */
   if (loadFlag) {
     extractHOGandTrain();
   } else {

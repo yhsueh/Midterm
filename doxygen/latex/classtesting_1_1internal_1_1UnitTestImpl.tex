@@ -1,0 +1,180 @@
+\hypertarget{classtesting_1_1internal_1_1UnitTestImpl}{}\section{testing\+:\+:internal\+:\+:Unit\+Test\+Impl Class Reference}
+\label{classtesting_1_1internal_1_1UnitTestImpl}\index{testing\+::internal\+::\+Unit\+Test\+Impl@{testing\+::internal\+::\+Unit\+Test\+Impl}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Reaction\+To\+Sharding} \{ {\bfseries H\+O\+N\+O\+R\+\_\+\+S\+H\+A\+R\+D\+I\+N\+G\+\_\+\+P\+R\+O\+T\+O\+C\+OL}, 
+{\bfseries I\+G\+N\+O\+R\+E\+\_\+\+S\+H\+A\+R\+D\+I\+N\+G\+\_\+\+P\+R\+O\+T\+O\+C\+OL}
+ \}\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_acc5ffd3f9bc2e87bb3dba4218f58af43}{}\label{classtesting_1_1internal_1_1UnitTestImpl_acc5ffd3f9bc2e87bb3dba4218f58af43}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Unit\+Test\+Impl} (\hyperlink{classtesting_1_1UnitTest}{Unit\+Test} $\ast$parent)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a5fb75faa88ee71f26e16473455b70839}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a5fb75faa88ee71f26e16473455b70839}
+
+\item 
+\hyperlink{classtesting_1_1TestPartResultReporterInterface}{Test\+Part\+Result\+Reporter\+Interface} $\ast$ {\bfseries Get\+Global\+Test\+Part\+Result\+Reporter} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a7b5bb4e2e66b312a6d5d2c135527be32}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a7b5bb4e2e66b312a6d5d2c135527be32}
+
+\item 
+void {\bfseries Set\+Global\+Test\+Part\+Result\+Reporter} (\hyperlink{classtesting_1_1TestPartResultReporterInterface}{Test\+Part\+Result\+Reporter\+Interface} $\ast$reporter)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a892b0e25b28af5e4400cf6fac336f2d8}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a892b0e25b28af5e4400cf6fac336f2d8}
+
+\item 
+\hyperlink{classtesting_1_1TestPartResultReporterInterface}{Test\+Part\+Result\+Reporter\+Interface} $\ast$ {\bfseries Get\+Test\+Part\+Result\+Reporter\+For\+Current\+Thread} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a816455636f396c48e203f505d27ab770}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a816455636f396c48e203f505d27ab770}
+
+\item 
+void {\bfseries Set\+Test\+Part\+Result\+Reporter\+For\+Current\+Thread} (\hyperlink{classtesting_1_1TestPartResultReporterInterface}{Test\+Part\+Result\+Reporter\+Interface} $\ast$reporter)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a1403fc10aebcc64479c5ee980c9b4eb4}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a1403fc10aebcc64479c5ee980c9b4eb4}
+
+\item 
+int {\bfseries successful\+\_\+test\+\_\+case\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a549c383b4d21bfd4b60d3d6aa2ac1949}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a549c383b4d21bfd4b60d3d6aa2ac1949}
+
+\item 
+int {\bfseries failed\+\_\+test\+\_\+case\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a09dd83b48ef2082fab162e8792eaa295}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a09dd83b48ef2082fab162e8792eaa295}
+
+\item 
+int {\bfseries total\+\_\+test\+\_\+case\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_ab5049f53312560726fa7f05924bfdade}{}\label{classtesting_1_1internal_1_1UnitTestImpl_ab5049f53312560726fa7f05924bfdade}
+
+\item 
+int {\bfseries test\+\_\+case\+\_\+to\+\_\+run\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a60c6be6043fd7789d6575a5cb21a7fff}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a60c6be6043fd7789d6575a5cb21a7fff}
+
+\item 
+int {\bfseries successful\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a8beb6a8a95d51790fb081e3a0e9aac34}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a8beb6a8a95d51790fb081e3a0e9aac34}
+
+\item 
+int {\bfseries failed\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a9f272a89c64be1801145364cd8753b05}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a9f272a89c64be1801145364cd8753b05}
+
+\item 
+int {\bfseries reportable\+\_\+disabled\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_acd5e7483191cf49af70d699e06ea1af1}{}\label{classtesting_1_1internal_1_1UnitTestImpl_acd5e7483191cf49af70d699e06ea1af1}
+
+\item 
+int {\bfseries disabled\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_ae5239c776abba66170ba84d1c7cee235}{}\label{classtesting_1_1internal_1_1UnitTestImpl_ae5239c776abba66170ba84d1c7cee235}
+
+\item 
+int {\bfseries reportable\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a29df296bc910ce1cf4a088b529e2f396}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a29df296bc910ce1cf4a088b529e2f396}
+
+\item 
+int {\bfseries total\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a61963ef3fbfe6110170abcb6f4368834}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a61963ef3fbfe6110170abcb6f4368834}
+
+\item 
+int {\bfseries test\+\_\+to\+\_\+run\+\_\+count} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_aac2aed3bb9f2aa77c43705a9d6dc1849}{}\label{classtesting_1_1internal_1_1UnitTestImpl_aac2aed3bb9f2aa77c43705a9d6dc1849}
+
+\item 
+Time\+In\+Millis {\bfseries start\+\_\+timestamp} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_acdad9bf7850c7697587b501be5c49f32}{}\label{classtesting_1_1internal_1_1UnitTestImpl_acdad9bf7850c7697587b501be5c49f32}
+
+\item 
+Time\+In\+Millis {\bfseries elapsed\+\_\+time} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a0ae726d47c69dd85b4f7858e78368bcb}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a0ae726d47c69dd85b4f7858e78368bcb}
+
+\item 
+bool {\bfseries Passed} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_aca57d4b475d7b9ad49f061197124c183}{}\label{classtesting_1_1internal_1_1UnitTestImpl_aca57d4b475d7b9ad49f061197124c183}
+
+\item 
+bool {\bfseries Failed} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_aba1461219cf740bcb2525bd85b504838}{}\label{classtesting_1_1internal_1_1UnitTestImpl_aba1461219cf740bcb2525bd85b504838}
+
+\item 
+const \hyperlink{classtesting_1_1TestCase}{Test\+Case} $\ast$ {\bfseries Get\+Test\+Case} (int i) const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a3104213167a38ffa80168a888e769c20}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a3104213167a38ffa80168a888e769c20}
+
+\item 
+\hyperlink{classtesting_1_1TestCase}{Test\+Case} $\ast$ {\bfseries Get\+Mutable\+Test\+Case} (int i)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a2ca71a08060037357fc7e1a406b89add}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a2ca71a08060037357fc7e1a406b89add}
+
+\item 
+\hyperlink{classtesting_1_1TestEventListeners}{Test\+Event\+Listeners} $\ast$ {\bfseries listeners} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a67211f8475936f88d0e4d30f841c0da4}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a67211f8475936f88d0e4d30f841c0da4}
+
+\item 
+\hyperlink{classtesting_1_1TestResult}{Test\+Result} $\ast$ {\bfseries current\+\_\+test\+\_\+result} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a6f7b5fe51daaf76c4f3095ff7fce4910}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a6f7b5fe51daaf76c4f3095ff7fce4910}
+
+\item 
+const \hyperlink{classtesting_1_1TestResult}{Test\+Result} $\ast$ {\bfseries ad\+\_\+hoc\+\_\+test\+\_\+result} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_aa5c0533805fa2937c58d6805e20aac51}{}\label{classtesting_1_1internal_1_1UnitTestImpl_aa5c0533805fa2937c58d6805e20aac51}
+
+\item 
+void {\bfseries set\+\_\+os\+\_\+stack\+\_\+trace\+\_\+getter} (\hyperlink{classtesting_1_1internal_1_1OsStackTraceGetterInterface}{Os\+Stack\+Trace\+Getter\+Interface} $\ast$getter)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a3306f7d2b19bca54b841006e4a2e0260}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a3306f7d2b19bca54b841006e4a2e0260}
+
+\item 
+\hyperlink{classtesting_1_1internal_1_1OsStackTraceGetterInterface}{Os\+Stack\+Trace\+Getter\+Interface} $\ast$ {\bfseries os\+\_\+stack\+\_\+trace\+\_\+getter} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a28c00108f774624044557d95379ce099}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a28c00108f774624044557d95379ce099}
+
+\item 
+std\+::string {\bfseries Current\+Os\+Stack\+Trace\+Except\+Top} (int skip\+\_\+count) G\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a61c0a51ac4e57d9f884f646ca6dd2210}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a61c0a51ac4e57d9f884f646ca6dd2210}
+
+\item 
+\hyperlink{classtesting_1_1TestCase}{Test\+Case} $\ast$ {\bfseries Get\+Test\+Case} (const char $\ast$test\+\_\+case\+\_\+name, const char $\ast$type\+\_\+param, Test\+::\+Set\+Up\+Test\+Case\+Func set\+\_\+up\+\_\+tc, Test\+::\+Tear\+Down\+Test\+Case\+Func tear\+\_\+down\+\_\+tc)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a1595819a7edfd31949800b9e7ea563a2}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a1595819a7edfd31949800b9e7ea563a2}
+
+\item 
+void {\bfseries Add\+Test\+Info} (Test\+::\+Set\+Up\+Test\+Case\+Func set\+\_\+up\+\_\+tc, Test\+::\+Tear\+Down\+Test\+Case\+Func tear\+\_\+down\+\_\+tc, \hyperlink{classtesting_1_1TestInfo}{Test\+Info} $\ast$test\+\_\+info)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a1cc87dfc91377ebec4a3ff4192dfcba9}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a1cc87dfc91377ebec4a3ff4192dfcba9}
+
+\item 
+void {\bfseries set\+\_\+current\+\_\+test\+\_\+case} (\hyperlink{classtesting_1_1TestCase}{Test\+Case} $\ast$a\+\_\+current\+\_\+test\+\_\+case)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a7f0e79bdabd28819cc857e316a36a350}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a7f0e79bdabd28819cc857e316a36a350}
+
+\item 
+void {\bfseries set\+\_\+current\+\_\+test\+\_\+info} (\hyperlink{classtesting_1_1TestInfo}{Test\+Info} $\ast$a\+\_\+current\+\_\+test\+\_\+info)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_ab72211c99ce4427dfb472d6ecea62989}{}\label{classtesting_1_1internal_1_1UnitTestImpl_ab72211c99ce4427dfb472d6ecea62989}
+
+\item 
+void {\bfseries Register\+Parameterized\+Tests} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_af84d2515f1a272a8783f00a3e8c0aff8}{}\label{classtesting_1_1internal_1_1UnitTestImpl_af84d2515f1a272a8783f00a3e8c0aff8}
+
+\item 
+bool {\bfseries Run\+All\+Tests} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a1fb6be9971f4768c4136a05aa9e7e375}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a1fb6be9971f4768c4136a05aa9e7e375}
+
+\item 
+void {\bfseries Clear\+Non\+Ad\+Hoc\+Test\+Result} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a96c2a5b23541ef01020c402644563ba1}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a96c2a5b23541ef01020c402644563ba1}
+
+\item 
+void {\bfseries Clear\+Ad\+Hoc\+Test\+Result} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_ac44629cc4fa12b788779d4aa76939510}{}\label{classtesting_1_1internal_1_1UnitTestImpl_ac44629cc4fa12b788779d4aa76939510}
+
+\item 
+void {\bfseries Record\+Property} (const \hyperlink{classtesting_1_1TestProperty}{Test\+Property} \&test\+\_\+property)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a15e4af4df167d2504decbc8fcc108a6f}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a15e4af4df167d2504decbc8fcc108a6f}
+
+\item 
+int {\bfseries Filter\+Tests} (Reaction\+To\+Sharding shard\+\_\+tests)\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_abd47e447f0c2557ed528db0350671bed}{}\label{classtesting_1_1internal_1_1UnitTestImpl_abd47e447f0c2557ed528db0350671bed}
+
+\item 
+void {\bfseries List\+Tests\+Matching\+Filter} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_ad2cfedef41d3d29aad23c2c64214e6f3}{}\label{classtesting_1_1internal_1_1UnitTestImpl_ad2cfedef41d3d29aad23c2c64214e6f3}
+
+\item 
+const \hyperlink{classtesting_1_1TestCase}{Test\+Case} $\ast$ {\bfseries current\+\_\+test\+\_\+case} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a2f44db2fb6d9cf3d0c2a90d9efc87402}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a2f44db2fb6d9cf3d0c2a90d9efc87402}
+
+\item 
+\hyperlink{classtesting_1_1TestInfo}{Test\+Info} $\ast$ {\bfseries current\+\_\+test\+\_\+info} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a8d303ebdcf5989e96d3ed96fb7255102}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a8d303ebdcf5989e96d3ed96fb7255102}
+
+\item 
+const \hyperlink{classtesting_1_1TestInfo}{Test\+Info} $\ast$ {\bfseries current\+\_\+test\+\_\+info} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a6c90b6512125a43fba8d1be5f99dde1a}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a6c90b6512125a43fba8d1be5f99dde1a}
+
+\item 
+std\+::vector$<$ \hyperlink{classtesting_1_1Environment}{Environment} $\ast$ $>$ \& {\bfseries environments} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_aa1489e6a2378d64d68bc01963ea5db4a}{}\label{classtesting_1_1internal_1_1UnitTestImpl_aa1489e6a2378d64d68bc01963ea5db4a}
+
+\item 
+std\+::vector$<$ \hyperlink{structtesting_1_1internal_1_1TraceInfo}{Trace\+Info} $>$ \& {\bfseries gtest\+\_\+trace\+\_\+stack} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_af8c7c0a0c954e36d83e6e4690d3fb938}{}\label{classtesting_1_1internal_1_1UnitTestImpl_af8c7c0a0c954e36d83e6e4690d3fb938}
+
+\item 
+const std\+::vector$<$ \hyperlink{structtesting_1_1internal_1_1TraceInfo}{Trace\+Info} $>$ \& {\bfseries gtest\+\_\+trace\+\_\+stack} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a1fa664f26839f3192f63afb502dee09d}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a1fa664f26839f3192f63afb502dee09d}
+
+\item 
+void {\bfseries Configure\+Xml\+Output} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a21cd7b2928de03a55b5252f29dd5ae6d}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a21cd7b2928de03a55b5252f29dd5ae6d}
+
+\item 
+void {\bfseries Post\+Flag\+Parsing\+Init} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a772894193104b1b2516f16e6ff813168}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a772894193104b1b2516f16e6ff813168}
+
+\item 
+int {\bfseries random\+\_\+seed} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a8ec59a7ab3bad96bccde98ce85ffc864}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a8ec59a7ab3bad96bccde98ce85ffc864}
+
+\item 
+\hyperlink{classtesting_1_1internal_1_1Random}{internal\+::\+Random} $\ast$ {\bfseries random} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_ab3b45b5eb4d583219a3602011ea44347}{}\label{classtesting_1_1internal_1_1UnitTestImpl_ab3b45b5eb4d583219a3602011ea44347}
+
+\item 
+void {\bfseries Shuffle\+Tests} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_aaaa38e6a4372e6bb9bbe3143a3a32b65}{}\label{classtesting_1_1internal_1_1UnitTestImpl_aaaa38e6a4372e6bb9bbe3143a3a32b65}
+
+\item 
+void {\bfseries Unshuffle\+Tests} ()\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a1ee7db3bf8284dd9dce4dc857564bce3}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a1ee7db3bf8284dd9dce4dc857564bce3}
+
+\item 
+bool {\bfseries catch\+\_\+exceptions} () const \hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a0bbc6e237776ee6afaee106fe83e0406}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a0bbc6e237776ee6afaee106fe83e0406}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries \+::testing\+::\+Unit\+Test}\hypertarget{classtesting_1_1internal_1_1UnitTestImpl_a893404438388dec058dc5c02e8f9a014}{}\label{classtesting_1_1internal_1_1UnitTestImpl_a893404438388dec058dc5c02e8f9a014}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googletest/src/gtest-\/internal-\/inl.\+h\end{DoxyCompactItemize}

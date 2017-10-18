@@ -1,0 +1,85 @@
+\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase}{}\section{testing\+:\+:internal\+:\+:Untyped\+Function\+Mocker\+Base Class Reference}
+\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase}\index{testing\+::internal\+::\+Untyped\+Function\+Mocker\+Base@{testing\+::internal\+::\+Untyped\+Function\+Mocker\+Base}}
+
+
+Inheritance diagram for testing\+:\+:internal\+:\+:Untyped\+Function\+Mocker\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtesting_1_1internal_1_1UntypedFunctionMockerBase__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Verify\+And\+Clear\+Expectations\+Locked} () G\+T\+E\+S\+T\+\_\+\+E\+X\+C\+L\+U\+S\+I\+V\+E\+\_\+\+L\+O\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a3f1d62a1662a3daa2895b3af963be269}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a3f1d62a1662a3daa2895b3af963be269}
+
+\item 
+virtual void {\bfseries Clear\+Default\+Actions\+Locked} () G\+T\+E\+S\+T\+\_\+\+E\+X\+C\+L\+U\+S\+I\+V\+E\+\_\+\+L\+O\+C\+K\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)=0\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a40ddd95736946a7951033aa89a7b617f}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a40ddd95736946a7951033aa89a7b617f}
+
+\item 
+virtual \hyperlink{classtesting_1_1internal_1_1UntypedActionResultHolderBase}{Untyped\+Action\+Result\+Holder\+Base} $\ast$ {\bfseries Untyped\+Perform\+Default\+Action} (const void $\ast$untyped\+\_\+args, const string \&call\+\_\+description) const =0\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a2cb149456cd559d5b0615f2310b235e3}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a2cb149456cd559d5b0615f2310b235e3}
+
+\item 
+virtual \hyperlink{classtesting_1_1internal_1_1UntypedActionResultHolderBase}{Untyped\+Action\+Result\+Holder\+Base} $\ast$ {\bfseries Untyped\+Perform\+Action} (const void $\ast$untyped\+\_\+action, const void $\ast$untyped\+\_\+args) const =0\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_ada5a72303863d0aa655b66338b8efea5}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_ada5a72303863d0aa655b66338b8efea5}
+
+\item 
+virtual void {\bfseries Untyped\+Describe\+Uninteresting\+Call} (const void $\ast$untyped\+\_\+args,\+::std\+::ostream $\ast$os) const G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)=0\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_aeb80e61406142e87f94fab10873e20ce}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_aeb80e61406142e87f94fab10873e20ce}
+
+\item 
+virtual const \hyperlink{classtesting_1_1internal_1_1ExpectationBase}{Expectation\+Base} $\ast$ {\bfseries Untyped\+Find\+Matching\+Expectation} (const void $\ast$untyped\+\_\+args, const void $\ast$$\ast$untyped\+\_\+action, bool $\ast$is\+\_\+excessive,\+::std\+::ostream $\ast$what,\+::std\+::ostream $\ast$why) G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)=0\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a6461abd05786eee4e125a2695382852d}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a6461abd05786eee4e125a2695382852d}
+
+\item 
+virtual void {\bfseries Untyped\+Print\+Args} (const void $\ast$untyped\+\_\+args,\+::std\+::ostream $\ast$os) const =0\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a3bd7439b411fc00f7d9f9a6f9591ae2c}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a3bd7439b411fc00f7d9f9a6f9591ae2c}
+
+\item 
+void {\bfseries Register\+Owner} (const void $\ast$mock\+\_\+obj) G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a0cd3dd14b92c714eab690c9597f32ffd}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a0cd3dd14b92c714eab690c9597f32ffd}
+
+\item 
+void {\bfseries Set\+Owner\+And\+Name} (const void $\ast$mock\+\_\+obj, const char $\ast$name) G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a287bcacee639b7d123cec29e0614fe96}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a287bcacee639b7d123cec29e0614fe96}
+
+\item 
+const void $\ast$ {\bfseries Mock\+Object} () const G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a42da5a85136c72edb72d65e6dba35cec}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a42da5a85136c72edb72d65e6dba35cec}
+
+\item 
+const char $\ast$ {\bfseries Name} () const G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a9fb89b093709f0f04e2c0d90eb93c2d1}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a9fb89b093709f0f04e2c0d90eb93c2d1}
+
+\item 
+\hyperlink{classtesting_1_1internal_1_1UntypedActionResultHolderBase}{Untyped\+Action\+Result\+Holder\+Base} $\ast$ {\bfseries Untyped\+Invoke\+With} (const void $\ast$untyped\+\_\+args) G\+T\+E\+S\+T\+\_\+\+L\+O\+C\+K\+\_\+\+E\+X\+C\+L\+U\+D\+E\+D\+\_\+(g\+\_\+gmock\+\_\+mutex)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a442b83b807e0518d1dbca382abbbc8c8}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a442b83b807e0518d1dbca382abbbc8c8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ const void $\ast$ $>$ {\bfseries Untyped\+On\+Call\+Specs}\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a29cc87ed60ad0218432aa777abba7dbb}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a29cc87ed60ad0218432aa777abba7dbb}
+
+\item 
+typedef std\+::vector$<$ \hyperlink{classtesting_1_1internal_1_1linked__ptr}{internal\+::linked\+\_\+ptr}$<$ \hyperlink{classtesting_1_1internal_1_1ExpectationBase}{Expectation\+Base} $>$ $>$ {\bfseries Untyped\+Expectations}\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a36480bd395e110b4eae5b0d0402de966}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a36480bd395e110b4eae5b0d0402de966}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1Expectation}{Expectation} {\bfseries Get\+Handle\+Of} (\hyperlink{classtesting_1_1internal_1_1ExpectationBase}{Expectation\+Base} $\ast$exp)\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a7705611c4a63df16cddb0674878c403a}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a7705611c4a63df16cddb0674878c403a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const void $\ast$ {\bfseries mock\+\_\+obj\+\_\+}\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_adf35c589969bb985668616031cb9ed56}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_adf35c589969bb985668616031cb9ed56}
+
+\item 
+const char $\ast$ {\bfseries name\+\_\+}\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a2d472077b9a8d3758caaec5770259f70}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_a2d472077b9a8d3758caaec5770259f70}
+
+\item 
+Untyped\+On\+Call\+Specs {\bfseries untyped\+\_\+on\+\_\+call\+\_\+specs\+\_\+}\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_aed2a1913f6c03fd47c8900039556be34}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_aed2a1913f6c03fd47c8900039556be34}
+
+\item 
+Untyped\+Expectations {\bfseries untyped\+\_\+expectations\+\_\+}\hypertarget{classtesting_1_1internal_1_1UntypedFunctionMockerBase_aae4a42a4bace1fcb0cd4bdf1ddd40277}{}\label{classtesting_1_1internal_1_1UntypedFunctionMockerBase_aae4a42a4bace1fcb0cd4bdf1ddd40277}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googlemock/include/gmock/gmock-\/spec-\/builders.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{classtesting_1_1TestCase}{}\section{testing\+:\+:Test\+Case Class Reference}
+\label{classtesting_1_1TestCase}\index{testing\+::\+Test\+Case@{testing\+::\+Test\+Case}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Test\+Case} (const char $\ast$name, const char $\ast$a\+\_\+type\+\_\+param, Test\+::\+Set\+Up\+Test\+Case\+Func set\+\_\+up\+\_\+tc, Test\+::\+Tear\+Down\+Test\+Case\+Func tear\+\_\+down\+\_\+tc)\hypertarget{classtesting_1_1TestCase_a8a43b04703bfc7d56597fcb9b76ffbf5}{}\label{classtesting_1_1TestCase_a8a43b04703bfc7d56597fcb9b76ffbf5}
+
+\item 
+const char $\ast$ {\bfseries name} () const \hypertarget{classtesting_1_1TestCase_af4dfd4ece8e66520a30e6a9fbd9d43aa}{}\label{classtesting_1_1TestCase_af4dfd4ece8e66520a30e6a9fbd9d43aa}
+
+\item 
+const char $\ast$ {\bfseries type\+\_\+param} () const \hypertarget{classtesting_1_1TestCase_a2052c095bc6ac9c0ab1cae6f0e2d9fc9}{}\label{classtesting_1_1TestCase_a2052c095bc6ac9c0ab1cae6f0e2d9fc9}
+
+\item 
+bool {\bfseries should\+\_\+run} () const \hypertarget{classtesting_1_1TestCase_a0e49de754452943d88e3083e6cdded00}{}\label{classtesting_1_1TestCase_a0e49de754452943d88e3083e6cdded00}
+
+\item 
+int {\bfseries successful\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_a8fb3974ccb5242ad9d1d633d53c0f730}{}\label{classtesting_1_1TestCase_a8fb3974ccb5242ad9d1d633d53c0f730}
+
+\item 
+int {\bfseries failed\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_ae74e7a2e75d07f9feca2c3384604cb01}{}\label{classtesting_1_1TestCase_ae74e7a2e75d07f9feca2c3384604cb01}
+
+\item 
+int {\bfseries reportable\+\_\+disabled\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_a4ec19c0058282562c0cc2c0e87d4b211}{}\label{classtesting_1_1TestCase_a4ec19c0058282562c0cc2c0e87d4b211}
+
+\item 
+int {\bfseries disabled\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_ac1e3cd2b598f19ce10e42b3421508a9e}{}\label{classtesting_1_1TestCase_ac1e3cd2b598f19ce10e42b3421508a9e}
+
+\item 
+int {\bfseries reportable\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_a7693150fa71d460a19b291ed6f5c18bd}{}\label{classtesting_1_1TestCase_a7693150fa71d460a19b291ed6f5c18bd}
+
+\item 
+int {\bfseries test\+\_\+to\+\_\+run\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_a47de0cf87858370388275c9d995f1ff4}{}\label{classtesting_1_1TestCase_a47de0cf87858370388275c9d995f1ff4}
+
+\item 
+int {\bfseries total\+\_\+test\+\_\+count} () const \hypertarget{classtesting_1_1TestCase_ac7b2ed22822735b7b9ae2740162332c9}{}\label{classtesting_1_1TestCase_ac7b2ed22822735b7b9ae2740162332c9}
+
+\item 
+bool {\bfseries Passed} () const \hypertarget{classtesting_1_1TestCase_ad093a04334d7eb8d707a7f1a321b040f}{}\label{classtesting_1_1TestCase_ad093a04334d7eb8d707a7f1a321b040f}
+
+\item 
+bool {\bfseries Failed} () const \hypertarget{classtesting_1_1TestCase_a5c0922d310f860e78cca7e215f2fa0e4}{}\label{classtesting_1_1TestCase_a5c0922d310f860e78cca7e215f2fa0e4}
+
+\item 
+Time\+In\+Millis {\bfseries elapsed\+\_\+time} () const \hypertarget{classtesting_1_1TestCase_a80f163d2826ba8586fffb41e8d686727}{}\label{classtesting_1_1TestCase_a80f163d2826ba8586fffb41e8d686727}
+
+\item 
+const \hyperlink{classtesting_1_1TestInfo}{Test\+Info} $\ast$ {\bfseries Get\+Test\+Info} (int i) const \hypertarget{classtesting_1_1TestCase_a17dfa2a9fde64f5add3615e9426e81e1}{}\label{classtesting_1_1TestCase_a17dfa2a9fde64f5add3615e9426e81e1}
+
+\item 
+const \hyperlink{classtesting_1_1TestResult}{Test\+Result} \& {\bfseries ad\+\_\+hoc\+\_\+test\+\_\+result} () const \hypertarget{classtesting_1_1TestCase_a3993481a8f0c2253653b5e1ec5934432}{}\label{classtesting_1_1TestCase_a3993481a8f0c2253653b5e1ec5934432}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Test}\hypertarget{classtesting_1_1TestCase_a5b78b1c2e1fa07ffed92da365593eaa4}{}\label{classtesting_1_1TestCase_a5b78b1c2e1fa07ffed92da365593eaa4}
+
+\item 
+class {\bfseries internal\+::\+Unit\+Test\+Impl}\hypertarget{classtesting_1_1TestCase_acc0a5e7573fd6ae7ad1878613bb86853}{}\label{classtesting_1_1TestCase_acc0a5e7573fd6ae7ad1878613bb86853}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googletest/include/gtest/gtest.\+h\end{DoxyCompactItemize}

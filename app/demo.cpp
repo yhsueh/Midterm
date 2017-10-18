@@ -1,6 +1,5 @@
 /** @file demo.cpp
- * @brief This is the demo wrapper that creates and calls a classifier class and sets up the path variables
- * necessary for class constructor.
+ * @brief This is where classifier class is called and set up.
  * @author Yuyu Hsueh
  * @copyright Copyright 2017 Yuyu Hsueh. All rights reserved.
  * Licensor hereby grants Licensee a Sublicensable, Non-assignable & non-transferable, Pepetual, Commercial, Royalty free.
@@ -14,6 +13,11 @@
 #include "Classifier.hpp"
 
 void dogClassifierInit(DetectedImg& imgs, int mode) {
+  /**
+   * @brief Dog classifier initialization. Mode 1 loads classifier. Mode 2 trains new classifier.
+   * @param DetectedImg, int
+   * @return none
+   */
   std::string dogPath = ("../expSamples/dog/");
   std::string loadDogPath = ("../Classifier_Dog.yml");
   if (mode) {
@@ -30,6 +34,11 @@ void dogClassifierInit(DetectedImg& imgs, int mode) {
 }
 
 int main() {
+  /**
+   * @brief In this demo, three street views are tested, and the results from SVM analysis will be returned along with the image.
+   * @param none
+   * @return none
+   */
   cv::Mat street1 = cv::imread("../expSamples/StreetView/street3.jpeg");
   cv::Mat street2 = cv::imread("../expSamples/StreetView/street8.jpeg");
   cv::Mat street3 = cv::imread("../expSamples/StreetView/street4.jpeg");

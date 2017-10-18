@@ -1,0 +1,8 @@
+<map id="testing::MatcherInterface&lt; T &gt;" name="testing::MatcherInterface&lt; T &gt;">
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1AnyMatcherImpl.html" title="testing::internal::\lAnyMatcherImpl\&lt; T \&gt;" alt="" coords="485,5,634,47"/>
+<area shape="rect" id="node4" href="$classtesting_1_1internal_1_1BothOfMatcherImpl.html" title="testing::internal::\lBothOfMatcherImpl\&lt; T \&gt;" alt="" coords="476,71,643,112"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1EitherOfMatcherImpl.html" title="testing::internal::\lEitherOfMatcherImpl\&lt; T \&gt;" alt="" coords="472,136,647,177"/>
+<area shape="rect" id="node6" href="$classtesting_1_1internal_1_1FloatingEqMatcher_1_1Impl.html" title="testing::internal::\lFloatingEqMatcher\&lt; T\l \&gt;::Impl" alt="" coords="484,201,635,257"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1NotMatcherImpl.html" title="testing::internal::\lNotMatcherImpl\&lt; T \&gt;" alt="" coords="486,280,633,321"/>
+<area shape="rect" id="node2" href="$classtesting_1_1MatcherDescriberInterface.html" title="testing::MatcherDescriber\lInterface" alt="" coords="5,136,177,177"/>
+</map>
