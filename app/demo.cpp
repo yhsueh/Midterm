@@ -25,6 +25,7 @@ void dogClassifierInit(DetectedImg& imgs, int mode) {
     classifierDog.setSavePath("../");
     classifierDog.setSaveName("Dog");
     classifierDog.imgInit(dogPath);
+    classifierDog.predictImg(imgs);
   }
 }
 
